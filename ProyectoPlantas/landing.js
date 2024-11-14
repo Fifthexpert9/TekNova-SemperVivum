@@ -29,10 +29,10 @@ botonLog.addEventListener('click', () => {
 
 });
 
-
+/*
 formularioContenedor.addEventListener('click', () => {
 						
     formularioContenedor.style.display = "none";
 
 });
-    
+    */
