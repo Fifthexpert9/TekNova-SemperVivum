@@ -1,0 +1,140 @@
+@font-face {
+    font-family: recoleta;
+    src: url(tipografias/recoleta/Recoleta-RegularDEMO.otf);
+}
+@font-face {
+    font-family: lasans;
+    src: url(tipografias/tt_chocolates/TT\ Chocolates\ Trial\ Light.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: #F4F4F4;
+    font-family: lasans;
+}
+
+header{
+    border: solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 6%;
+    }
+
+    /*span{
+        transition: transform 0.2s ease;
+    
+        a{
+            color: black;
+        }
+    }
+    span:hover{
+        transform: scale(1.2);
+    }*/
+
+    a{
+        margin: 1em;
+        align-items: center;
+        color: darkgray;
+        transition: transform 0.3s ease;
+    }
+
+    a:hover{
+        transform: scale(1.1); 
+    }
+
+    /*#boton{
+        display: flex;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        border-radius: 18px;
+
+        a{
+            color: white;
+            background-color: green;
+            padding: 0.5em;
+            border-radius: 18px;
+        }
+    }
+    #boton:hover{
+        transform: scale(1.1); 
+    }*/
+
+    #iconos{
+        display: flex;
+        width: 3%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+#Image-Text{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8em;
+    width: 80%;
+    margin-left: 10%;
+
+
+    #texto{
+
+        width: 50%;
+
+        h1{
+            font-size: 3em;
+            width: 70%;
+            margin-bottom: 1em;
+        }
+
+        p{
+            width: 60%;
+            margin-bottom: 2em;
+        }
+
+        #botonTexto{
+            width: 20%;
+            transition: transform 0.3s ease;
+
+            a{
+                color: white;
+                background-color: green;
+                padding: 0.5em;
+                border-radius: 18px;
+            }
+
+        }
+        
+        #botonTexto:hover{
+            transform: scale(1.2); 
+        }
+        
+    }
+
+    #imagen{
+
+        width: 40%;
+
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
