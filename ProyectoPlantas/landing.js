@@ -30,10 +30,11 @@ botonLog.addEventListener('click', (event) => {
 
 });
 
-/*
-formularioContenedor.addEventListener('click', () => {
+
+let IniciarSesion = document.querySelector('.login-btn');
+
+IniciarSesion.addEventListener('click', () => {
 						
     formularioContenedor.style.display = "none";
 
 });
-    */
