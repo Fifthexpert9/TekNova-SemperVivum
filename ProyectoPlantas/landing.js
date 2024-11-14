@@ -1,6 +1,10 @@
-let boton = document.getElementById('SobreNosotros');
+let botones = document.querySelectorAll('.empresaPDF');
 
-boton.addEventListener('click', () => {
+botones.forEach(boton => {
+    
+    boton.addEventListener('click', () => {
 
-    window.open("../1er Sprint Empresa.pdf", '_blank').focus();
+        window.open("../1er Sprint Empresa.pdf", '_blank').focus();
+    });
 });
+    
