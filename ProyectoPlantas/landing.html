@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="landing.css">
-    <link rel="stylesheet" href="landing.js">
+    
 </head>
 <body>
     <header>
@@ -15,24 +15,39 @@
         <div id="barraOpciones">
             <nav>
                 <a href="">INICIO</a>
-                <a id="SobreNosotros" href="../1er Sprint Empresa.pdf">SOBRE NOSOTROS</a>
-                <a href="">HABLEMOS</a>
+                <a id="SobreNosotros" class="empresaPDF" href="">SOBRE NOSOTROS</a>
+                <a id="hablemos" href="">HABLEMOS</a>
             </nav>
 
             <div id="boton">
-                <a href="">LOG IN</a>
+                <a id="Login" href="">LOG IN</a>
             </div>
         </div>
     </header>
 
     <main>
+        <div id="contenedor">
+            <form action="" method="post">
+                    <h2>Iniciar Sesión</h2>
+                <div class="input-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" placeholder="Ingresa tu usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="login-btn">Iniciar Sesión</button>
+                <p class="signup-text">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+            </form>
+        </div>
         <div id="Image-Text">
             <div id="texto">
                 <h1>Diseñamos el futuro de tu negocio online</h1>
                 <p>No solo ofrecemos una pagina web sino una herramienta poderosa para crecer y consolidar tu marca en el mercado digital.</p>
                 <div id="botonTexto">
                     <div>
-                        <a href="">CONÓCENOS</a>
+                        <a class="empresaPDF" href="">CONÓCENOS</a>
                     </div>
                 </div>
             </div>
@@ -65,4 +80,6 @@
     </main>
 
 </body>
+
+<script src="landing.js"></script>
 </html>
