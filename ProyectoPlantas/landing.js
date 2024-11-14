@@ -23,8 +23,9 @@ hablarBtn.addEventListener('click', () => {
 let formularioContenedor = document.getElementById('contenedor');
 let botonLog = document.getElementById('Login');
 
-botonLog.addEventListener('click', () => {
+botonLog.addEventListener('click', (event) => {
 					
+    event.preventDefault();
     formularioContenedor.style.display = "flex";
 
 });
