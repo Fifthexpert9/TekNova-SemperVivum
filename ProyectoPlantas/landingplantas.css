@@ -13,24 +13,49 @@
     text-decoration: none;
     background-color: #F4F4F4;
     font-family: lasans;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header{
-    border: solid;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    background-color: #669966;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    #logo{
+        width: 5%;
+        margin-right: 2%;
+    }
+
+    a{
+        margin: 1em;
+        align-items: center;
+        color: #c8f0c0;
+        transition: transform 0.3s ease;
+        background-color: #669966;
+    }
+
+    a:hover{
+        transform: scale(1.1); 
+    }
 
     nav{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    img{
-        width: 6%;
+        background-color: #669966;
     }
 
     /*span{
@@ -43,17 +68,6 @@ header{
     span:hover{
         transform: scale(1.2);
     }*/
-
-    a{
-        margin: 1em;
-        align-items: center;
-        color: darkgray;
-        transition: transform 0.3s ease;
-    }
-
-    a:hover{
-        transform: scale(1.1); 
-    }
 
     /*#boton{
         display: flex;
@@ -73,65 +87,65 @@ header{
     }*/
 
     #iconos{
+        margin-left: auto;
         display: flex;
-        width: 3%;
-        img{
-            width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #669966;
+
+        span{
+            background-color: #669966;
         }
     }
 }
 
-
-#Image-Text{
-
+#principal{
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-top: 8em;
-    width: 80%;
-    margin-left: 10%;
-
+    padding-top: 7em;
+    background-color: #B4E7AA;
 
     #texto{
-
-        width: 50%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2em;
+        background-color: #B4E7AA;
 
         h1{
             font-size: 3em;
-            width: 70%;
-            margin-bottom: 1em;
+            background-color: #B4E7AA;
         }
 
         p{
-            width: 60%;
-            margin-bottom: 2em;
+            display: none;
+            background-color: #B4E7AA;
         }
 
-        #botonTexto{
-            width: 20%;
+        #boton{
+            display: inline-block;
+            margin-top: 2em;
             transition: transform 0.3s ease;
 
             a{
                 color: white;
-                background-color: green;
+                background-color: #669966;
                 padding: 0.5em;
                 border-radius: 18px;
             }
 
         }
         
-        #botonTexto:hover{
-            transform: scale(1.2); 
+        #boton:hover{
+            transform: scale(1.1); 
         }
         
     }
 
-    #imagen{
-
-        width: 40%;
-
-
+    figure{
+        width: 80%;
         img{
             width: 100%;
             height: auto;
