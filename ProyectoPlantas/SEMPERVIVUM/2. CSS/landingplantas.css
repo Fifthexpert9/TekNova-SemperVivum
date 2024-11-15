@@ -1,10 +1,10 @@
 @font-face {
     font-family: recoleta;
-    src: url(tipografias/recoleta/Recoleta-RegularDEMO.otf);
+    src: url(../tipografias/recoleta/Recoleta-RegularDEMO.otf);
 }
 @font-face {
     font-family: lasans;
-    src: url(tipografias/tt_chocolates/TT\ Chocolates\ Trial\ Light.otf);
+    src: url(../tipografias/tt_chocolates/TT\ Chocolates\ Trial\ Light.otf);
 }
 
 *{
@@ -110,7 +110,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 7em;
+    padding-top: 6em;
     background-color: #d9f0d5;
 
     #texto{
