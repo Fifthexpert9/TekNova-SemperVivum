@@ -4,7 +4,7 @@ botones.forEach(boton => {
 
     boton.addEventListener('click', () => {
 
-        window.open("../1er Sprint Empresa.pdf", '_blank').focus();
+        window.open("../../1er Sprint Empresa.pdf", '_blank').focus();
     });
 });
 
