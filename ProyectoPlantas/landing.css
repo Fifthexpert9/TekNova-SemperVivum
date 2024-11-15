@@ -109,7 +109,7 @@ header{
             padding: 0.5em;
             padding-right: 1em;
             padding-left: 1em;
-            border-radius: 18px;
+            border-radius: 10px;
         }
     }
 
@@ -127,18 +127,19 @@ main{
 #contenedor {
     
     position: fixed;
-    bottom: 0;
-    /*left: 0;*/
-    width: 100vw;
-    height: 100vh;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.8);
     display: none;
     justify-content: center;
     align-items: center;
+    margin: 0;
 
     form{
         width: 20%;
-        border: solid;
+        padding: 1em;
+        border-radius: 15px;
     }
 }
 
@@ -247,7 +248,7 @@ main{
                     color: white;
                     background-color: #115F90;
                     padding: 0.5em;
-                    border-radius: 18px;
+                    border-radius: 10px;
                     transition: transform 0.3s ease;
     
                 }
