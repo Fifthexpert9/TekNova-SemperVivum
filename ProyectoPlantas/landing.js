@@ -38,3 +38,20 @@ IniciarSesion.addEventListener('click', () => {
     formularioContenedor.style.display = "none";
 
 });
+
+
+
+
+let logo = document.getElementById('logo');
+
+logo.addEventListener('mouseover', () => {
+    
+    logo.classList.add('animacion');
+
+});
+
+logo.addEventListener('mouseleave', () => {
+    
+    logo.classList.remove('animacion');
+
+});
