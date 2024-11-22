@@ -149,8 +149,9 @@ header{
     background-color: rgba(0, 0, 0, 0);
 
     #imagen1{
-        width: 45%;
+        width: 40%;
         height: 60%;
+        overflow: hidden;
 
         img{
             width: 100%;
@@ -159,11 +160,30 @@ header{
     }
 
     #imagenTexto{
-        width: 45%;
-        height: 100%;
+        width: 40%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        background-color: rgba(0, 0, 0, 0);
+
+        #imagen2{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+
+            img{
+                width: 100%;
+            }
+        }
+
+        #text{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+
+            p{
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
     }
 }
 
