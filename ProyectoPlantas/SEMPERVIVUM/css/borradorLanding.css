@@ -1,0 +1,264 @@
+/* RESET DE ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY: Estilo general de la página */
+body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* HEADER: Estilos del encabezado */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3%;
+}
+
+#logo {
+    text-align: center;
+    display: inline-block;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+header figcaption h1 {
+    font-size: 24px;
+}
+
+/* SECCIÓN FONDO: Estilo de la sección de introducción con fondo */
+#intro-background {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/consentidas.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-background h2 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-descubrir {
+    padding: 10px 20px;
+    background-color: #469448;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-descubrir:hover {
+    background-color: #45a049;
+}
+
+
+/* MAIN: Contenido principal */
+#contetenido {
+    width: 44%;
+    text-align: center;
+    background-color: #9C9C9C;
+}
+
+#contenido h1 {
+    color: #76231C;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+p {
+    color: #76231C;
+    font-size: large;
+}
+
+/* SECCIÓN INTRO: Descripción de flores de otoño */
+#intro {
+    padding: 2%;  /* Añadido padding para mejorar la separación interna */
+    margin: 0 auto; /* Centrado de la sección dentro del main */
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+#intro h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#intro strong {
+    color: #45a049;
+    font-weight: bold;
+}
+
+/* SECCIONES DE PRODUCTOS Y NOVEDADES */
+section {
+    padding-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #EBE2DD;
+}
+
+section figure {
+    width: 40%;
+    padding: 2%;
+    margin: 0.5%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section figure img {
+    width: 80%;
+}
+
+section figure figcaption {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section h2 {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5C3A2B;
+}
+
+section a {
+    margin: 1%;
+    padding: 2%;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    background-color: #5C3A2B;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section h6 {
+    width: 40%;
+    color: white;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #469448;
+    margin: 1%;
+    text-align: center;
+}
+
+.btn-consigue {
+    padding: 10px 20px;
+    background-color: #469448;  
+    color: white;               
+    border: none;             
+    border-radius: 5px;     
+    font-size: 16px;          
+    cursor: pointer;         
+    margin-top: 15px;     
+}
+
+.btn-consigue:hover {
+    background-color: #45a049;
+}
+
+#favoritas {
+    padding: 2%;
+    margin: 2%;
+    width: 100%;
+    background-color: #5C3A2B;
+    color: white;
+    width: 70%;
+}
+
+#favoritas a {
+    color: white;
+}
+
+#borde {
+    width: 100%;
+    padding: 3%;
+    background-color: #5C3A2B;
+}
+
+/* SECCIÓN DE NOVEDADES */
+aside {
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-top: solid;
+    color: #5C3A2B;
+}
+
+#mistery {
+    font-size: 1.5em;
+}
+
+aside {
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    border-top: solid;
+    color: #5C3A2B;
+}
+
+aside p {
+    width: 60%;
+    margin-top: 20px; 
+    font-size: 1.5em;
+    color: #5C3A2B;
+    line-height: 1.3;
+}
+
+aside a {
+    background-color: #AD7343;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block; 
+    margin-top: 20px; 
+}
+
+aside img {
+    width: 35%; 
+    margin-left: 20px; 
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+   
+}

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sempervivum | Tienda de Plantas, Flores y Accesorios de Jardinería</title>
-    <meta name="description" content="Compra plantas y flores de interior y exterior, accesorios para jardinería y más. Descubre Sempervivum, el hogar de tu pasión por lo verde.">
-    <meta name="author" content="TekNova">
-    <meta name="keywords" content="Tienda de plantas, plantas de interior y exterior, accesorios de jardinería, semillas y bulbos, cuidado de plantas, macetas, flores frescas, decoración de jardines, plantas y flores de interior y exterior.">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/borradorLanding.css">
+    <title>Sempervivum | Tienda de Flores</title>
 </head>
+
 <body>
+    <!-- HEADER: Logo de la tienda -->
     <header>
-        <figure>
+        <figure id="logo">
             <img src="../img/logo Provisional.png" alt="Logo de Sempervivum">
             <figcaption>
                 <h1>SEMPERVIVUM</h1>
@@ -19,12 +20,68 @@
         </figure>
     </header>
 
-    <main>
-        <section class="fondo">
-            <h2>Descubre tus nuevas consentidas</h2>
+    <!-- MAIN: Contenido principal de la página -->
+    <main id="contetenido">
+        <!-- SECCIÓN FONDO: Introducción con imagen de fondo -->
+        <section id="intro-background" >
+            <h2>¡Ya están aquí las nuevas flores de otoño!</h2>
             <button class="btn-descubrir">Descubrir más</button>
         </section>
+
+        <!-- SECCIÓN INTRO: Descripción de las flores de otoño -->
+        <section id="intro">
+            <h2>Descubre tus nuevas consentidas</h2>
+            <p>
+                Nuestra <strong>nueva selección de flores y plantas de temporada</strong> son perfectas para llenar tu hogar de color y frescura.
+                Nuestras flores llegan directamente del campo a tu casa, garantizando la mejor calidad. No dejes pasar la oportunidad de llevar la belleza
+                del otoño a tu jardín. ¡Hazte con las tuyas hoy mismo!
+            </p>
+        </section>
+
+        <!-- SECCIÓN DE PRODUCTOS DESTACADOS -->
+        <section id="productos-destacados">
+            <!-- Producto 1: Orquídea mariposa -->
+            <figure>
+                <figcaption>
+                    <h2>Orquídea mariposa</h2>
+                    <h6>Novedad</h6>
+                </figcaption>
+                <img src="../img/orquidea.jpg" alt="Orquídea mariposa">
+                <button class="btn-consigue">¡Consíguela hoy!</button>
+            </figure>
+
+            <!-- Producto 2: Anastacia y Áster -->
+            <figure>
+                <figcaption>
+                    <h2>Anastacia y Áster</h2>
+                    <h6>Novedad</h6>
+                </figcaption>
+                <img src="../img/ramos.png" alt="Ramo de Anastacia y Áster">
+                <button class="btn-consigue">¡Consíguela hoy!</button>
+            </figure>
+
+
+            <!-- Enlace a más flores favoritas -->
+            <div id="favoritas">
+                <a href="">Las favoritas de nuestros clientes</a>
+            </div>
+
+            <!-- Borde de separación -->
+            <div id="borde"></div>
+
+            <!-- SECCIÓN DE NOVEDADES: Caja misteriosa -->
+            <aside id="novedad">
+                <p>¡NOVEDAD!<br>
+                    <strong id="mistery">CAJA MISTERIOSA<br>
+                        FLORES Y PLANTAS VARIADAS<br></strong>
+                    Sorpréndete cada mes con diseños únicos.
+                    <a href="">MISTERY PLANTBOX</a>
+                </p>
+                <img src="../img/misteryPlantbox.jpg" alt="Caja misteriosa de flores">
+            </aside>
+        </section>
+
     </main>
-    
 </body>
+
 </html>
