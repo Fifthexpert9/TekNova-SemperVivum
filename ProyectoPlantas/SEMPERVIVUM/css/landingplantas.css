@@ -69,11 +69,12 @@ header{
         transition: transform 0.3s ease;
         /*background-color: #669966;*/
         background-color: rgba(0, 0, 0, 0);
+        font-weight: bolder;
     }
 
     a:hover{
         transform: scale(1.1);
-        color: #b4169c;
+        color: black;
     }
 
     nav{
