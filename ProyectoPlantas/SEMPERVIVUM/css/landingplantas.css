@@ -37,16 +37,25 @@ header{
     top: 0;
     z-index: 10;
 
-    h2{
-        margin-right: 20%;
+    #logoTitulo{
+        width: 50%;
         display: flex;
         justify-content: left;
         align-items: center;
         background-color: rgba(0, 0, 0, 0);
     }
 
+    h1{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0);
+        color: #669966;
+        margin-left: -6%;
+    }
+
     #logo{
-        width: 15%;
+        width: 30%;
         margin-right: 2%;
         padding: 1em;
         background-color: rgba(0, 0, 0, 0);
