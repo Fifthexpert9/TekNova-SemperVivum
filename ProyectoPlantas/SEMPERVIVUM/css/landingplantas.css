@@ -23,32 +23,35 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: linear-gradient(to right, white, #669966);
 }
 
 header{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    background-color: #669966;
     background-image: linear-gradient(to right, white, #669966);
     position: fixed;
     top: 0;
     z-index: 10;
 
     #logo{
-        width: 10%;
+        width: 15%;
         margin-right: 2%;
         padding: 1em;
         background-color: rgba(0, 0, 0, 0);
+        margin-left: 5%;
     }
 
     a{
         margin: 1em;
         align-items: center;
-        color: #c8f0c0;
+        color: black;
         transition: transform 0.3s ease;
-        background-color: #669966;
+        /*background-color: #669966;*/
+        background-color: rgba(0, 0, 0, 0);
     }
 
     a:hover{
@@ -60,7 +63,11 @@ header{
         display: flex;
         justify-content: center;
         align-items: center; 
-        background-color: #669966;
+        background-color: rgba(0, 0, 0, 0);
+        margin-right: 10%;
+        border-radius: 10px;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
   /*span{
@@ -116,29 +123,34 @@ header{
     justify-content: center;
     align-items: center;
     padding-top: 6em;
-    background-color: #d9f0d5;
+    /*background-color: #d9f0d5;*/
     margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
 
   #texto {
     width: 100%;
     text-align: center;
     margin-bottom: 2em;
-    background-color: #d9f0d5;
+    /*background-color: #d9f0d5;*/
+    background-color: rgba(0, 0, 0, 0);
 
     h1 {
       font-size: 3em;
-      background-color: #d9f0d5;
+      /*background-color: #d9f0d5;*/
+      background-color: rgba(0, 0, 0, 0);
     }
 
     p {
       display: none;
-      background-color: #d9f0d5;
+      /*background-color: #d9f0d5;*/
+      background-color: rgba(0, 0, 0, 0);
     }
 
     #boton {
       display: inline-block;
       margin-top: 2em;
       transition: transform 0.3s ease;
+      background-color: rgba(0, 0, 0, 0);
 
       a {
         color: white;
