@@ -70,10 +70,11 @@ header{
         /*background-color: #669966;*/
         background-color: rgba(0, 0, 0, 0);
         font-weight: bolder;
+
     }
 
     a:hover{
-        transform: scale(1.1);
+        transform: scale(1.3);
         color: black;
     }
 
