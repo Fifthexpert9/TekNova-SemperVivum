@@ -14,7 +14,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center; /* Centrar el contenido del header */
-    margin-bottom: 1%;
+    margin: 1%;
 }
 
 figure {
@@ -23,14 +23,19 @@ figure {
 }
 
 header img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     display: block; /* Hace que la imagen se comporte como un bloque */
     margin: 0 auto; /* Centra horizontalmente la imagen */
 }
 
 figcaption h1 {
     font-size: 24px;
+}
+
+main{
+    width: 100%;
+    display: flex;
 }
 
 .fondo {
@@ -51,6 +56,7 @@ figcaption h1 {
     font-size: 3em; /* Tamaño del texto */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto para mejor visibilidad */
     margin-bottom: 20px; /* Espaciado debajo del h2 */
+    text-align: center;
 }
 
 .btn-descubrir {
