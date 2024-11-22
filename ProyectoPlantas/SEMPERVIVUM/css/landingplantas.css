@@ -138,6 +138,24 @@ header{
     }*/
 }
 
+#titulo{
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+
+    h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
 
 #dosImag{
     width: 100%;
@@ -145,7 +163,6 @@ header{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10%;
     background-color: rgba(0, 0, 0, 0);
 
     #imagen1{
