@@ -135,6 +135,22 @@ header{
 }
 
 
+#dosImag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    #imagen1{
+        width: 50%;
+
+        img{
+            width: 100%
+        };
+    }
+}
+
+
 #principal{
     width: 90%;
     display: flex;
