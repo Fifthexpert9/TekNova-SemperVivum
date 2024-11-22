@@ -25,42 +25,42 @@ html {
   justify-content: center;
 }
 
-header {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #669966;
-  background-image: linear-gradient(to right, white, #669966);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-
-  #logo {
-    width: 10%;
-    margin-right: 2%;
-    padding: 1em;
-  }
-
-  a {
-    margin: 1em;
-    align-items: center;
-    color: #c8f0c0;
-    transition: transform 0.3s ease;
-    background-color: #669966;
-  }
-
-  a:hover {
-    transform: scale(1.1);
-    color: #b4169c;
-  }
-
-  nav {
+header{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #669966;
-  }
+    background-image: linear-gradient(to right, white, #669966);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    #logo{
+        width: 10%;
+        margin-right: 2%;
+        padding: 1em;
+    }
+
+    a{
+        margin: 1em;
+        align-items: center;
+        color: #c8f0c0;
+        transition: transform 0.3s ease;
+        background-color: #669966;
+    }
+
+    a:hover{
+        transform: scale(1.1);
+        color: #b4169c;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color: #669966;
+    }
 
   /*span{
         transition: transform 0.2s ease;
@@ -88,33 +88,34 @@ header {
     }
     #boton:hover{
         transform: scale(1.1); 
-    }*/
-
-  #iconos {
-    margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #669966;
-
-    span {
-      background-color: #669966;
     }
 
-    a:hover {
-      color: #b4169c;
+    #iconos{
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #669966;
+
+        span{
+            background-color: #669966;
+        }
+
+        a:hover{
+            color: #b4169c;
+        }
     }
-  }
 }
 
-#principal {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 6em;
-  background-color: #d9f0d5;
+
+#principal{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6em;
+    background-color: #d9f0d5;
 
   #texto {
     width: 100%;
