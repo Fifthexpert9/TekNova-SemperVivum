@@ -37,7 +37,6 @@ header{
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to right, white, #669966);
-    position: fixed;
     top: 0;
     z-index: 10;
 
@@ -140,7 +139,6 @@ header{
 
 #titulo{
     width: 100%;
-    margin-top: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -169,10 +167,13 @@ header{
         width: 40%;
         height: 60%;
         overflow: hidden;
+        background-color: rgba(0, 0, 0, 0);
 
         img{
             width: 100%;
             object-fit: cover;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0);
         }
     }
 
@@ -190,6 +191,8 @@ header{
 
             img{
                 width: 100%;
+                border-radius: 15px;
+                background-color: rgba(0, 0, 0, 0);
             }
         }
 
@@ -213,7 +216,6 @@ header{
     align-items: center;
     padding-top: 6em;
     /*background-color: #d9f0d5;*/
-    margin-top: 10%;
     background-color: rgba(0, 0, 0, 0);
 
   #texto {
