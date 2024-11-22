@@ -28,35 +28,46 @@ header{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     background-color: #669966;
+    background-image: linear-gradient(to right, white, #669966);
     position: fixed;
     top: 0;
     z-index: 10;
+    
 
     #logo{
-        width: 5%;
+        width: 10%;
         margin-right: 2%;
+        padding: 1em;
+        background-color: ;
     }
 
-    a{
-        margin: 1em;
-        align-items: center;
-        color: #c8f0c0;
-        transition: transform 0.3s ease;
-        background-color: #669966;
-    }
-
-    a:hover{
-        transform: scale(1.1);
-        color: #b4169c;
-    }
-
+    
     nav{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
         background-color: #669966;
+        border-radius: 10px;
+        margin-right: 7%;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        a{
+            margin: 1em;
+            align-items: center;
+            color: #c8f0c0;
+            transition: transform 0.3s ease;
+            background-color: #669966;
+        }
+
+        a:hover{
+            transform: scale(1.1);
+            color: #b4169c;
+        }
+    
     }
 
     /*span{
@@ -85,7 +96,7 @@ header{
     }
     #boton:hover{
         transform: scale(1.1); 
-    }*/
+    }
 
     #iconos{
         margin-left: auto;
@@ -93,16 +104,25 @@ header{
         flex-wrap: wrap;
         justify-content: space-between;
         background-color: #669966;
+        border-radius: 15px;
 
         span{
             background-color: #669966;
+        }
+
+        a{
+            margin: 1em;
+            align-items: center;
+            transition: transform 0.3s ease;
         }
 
         a:hover{
             color: #b4169c;
         }
     }
+*/
 }
+
 
 #principal{
     width: 90%;
@@ -112,6 +132,7 @@ header{
     align-items: center;
     padding-top: 6em;
     background-color: #d9f0d5;
+    margin-top: 10%;
 
     #texto{
         width: 100%;
