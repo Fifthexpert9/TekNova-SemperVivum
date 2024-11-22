@@ -30,13 +30,15 @@ header{
     flex-wrap: wrap;
     align-items: center;
     background-color: #669966;
+    background-image: linear-gradient(to right, white, #669966);
     position: fixed;
     top: 0;
     z-index: 10;
 
     #logo{
-        width: 5%;
+        width: 10%;
         margin-right: 2%;
+        padding: 1em;
     }
 
     a{
@@ -55,7 +57,7 @@ header{
     nav{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
         background-color: #669966;
     }
 
