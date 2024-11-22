@@ -1,41 +1,40 @@
 @font-face {
-    font-family: recoleta;
-    src: url(../tipografias/recoleta/Recoleta-RegularDEMO.otf);
+  font-family: recoleta;
+  src: url(../tipografias/recoleta/Recoleta-RegularDEMO.otf);
 }
 @font-face {
-    font-family: lasans;
-    src: url(../tipografias/tt_chocolates/TT\ Chocolates\ Trial\ Light.otf);
+  font-family: lasans;
+  src: url(../tipografias/tt_chocolates/TT\ Chocolates\ Trial\ Light.otf);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    background-color: #F4F4F4;
-    font-family: lasans;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  font-family: lasans;
+  box-sizing: border-box;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     background-color: #669966;
     background-image: linear-gradient(to right, white, #669966);
     position: fixed;
     top: 0;
     z-index: 10;
-    
 
     #logo{
         width: 10%;
@@ -43,33 +42,27 @@ header{
         padding: 1em;
     }
 
-    
+    a{
+        margin: 1em;
+        align-items: center;
+        color: #c8f0c0;
+        transition: transform 0.3s ease;
+        background-color: #669966;
+    }
+
+    a:hover{
+        transform: scale(1.1);
+        color: #b4169c;
+    }
+
     nav{
         display: flex;
         justify-content: center;
         align-items: center; 
         background-color: #669966;
-        border-radius: 10px;
-        margin-right: 7%;
-        padding-left: 1em;
-        padding-right: 1em;
-
-        a{
-            margin: 1em;
-            align-items: center;
-            color: #c8f0c0;
-            transition: transform 0.3s ease;
-            background-color: #669966;
-        }
-
-        a:hover{
-            transform: scale(1.1);
-            color: #b4169c;
-        }
-    
     }
 
-    /*span{
+  /*span{
         transition: transform 0.2s ease;
     
         a{
@@ -80,7 +73,7 @@ header{
         transform: scale(1.2);
     }*/
 
-    /*#boton{
+  /*#boton{
         display: flex;
         cursor: pointer;
         transition: transform 0.3s ease;
@@ -103,23 +96,15 @@ header{
         flex-wrap: wrap;
         justify-content: space-between;
         background-color: #669966;
-        border-radius: 15px;
 
         span{
             background-color: #669966;
-        }
-
-        a{
-            margin: 1em;
-            align-items: center;
-            transition: transform 0.3s ease;
         }
 
         a:hover{
             color: #b4169c;
         }
     }
-*/
 }
 
 
@@ -131,74 +116,73 @@ header{
     align-items: center;
     padding-top: 6em;
     background-color: #d9f0d5;
-    margin-top: 10%;
 
-    #texto{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 2em;
-        background-color: #d9f0d5;
+  #texto {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+    background-color: #d9f0d5;
 
-        h1{
-            font-size: 3em;
-            background-color: #d9f0d5;
-        }
-
-        p{
-            display: none;
-            background-color: #d9f0d5;
-        }
-
-        #boton{
-            display: inline-block;
-            margin-top: 2em;
-            transition: transform 0.3s ease;
-
-            a{
-                color: white;
-                background-color: #669966;
-                padding: 0.6em;
-                border-radius: 18px;
-            }
-
-        }
-        
-        #boton:hover{
-            transform: scale(1.1); 
-        }
-        
+    h1 {
+      font-size: 3em;
+      background-color: #d9f0d5;
     }
 
-    figure{
-        position: relative;
-        overflow: hidden;
-        width: 80%;
-
-        img{
-            display: none;
-            width: 100%;
-            height: auto;
-        }
-
-        img.active {
-            display: block;
-        }
-
-        .carousel-controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-        
-        .carousel-button {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 0.5rem;
-            cursor: pointer;
-        }
+    p {
+      display: none;
+      background-color: #d9f0d5;
     }
+
+    #boton {
+      display: inline-block;
+      margin-top: 2em;
+      transition: transform 0.3s ease;
+
+      a {
+        color: white;
+        background-color: #669966;
+        padding: 0.6em;
+        border-radius: 18px;
+      }
+    }
+
+    #boton:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  figure {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+
+    img {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+
+    img.active {
+      display: block;
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: transparent;
+      transform: translateY(-50%);
+    }
+
+    .carousel-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+  }
 }

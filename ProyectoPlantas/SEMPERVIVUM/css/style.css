@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centrar el contenido del header */
+    margin-bottom: 1%;
+}
+
+figure {
+    text-align: center; /* Centra el contenido dentro del figure */
+    display: inline-block; /* Asegura que el figure se comporte como un bloque centrado */
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+figcaption h1 {
+    font-size: 24px;
+}
+
+.fondo {
+    width: 100%;
+    height: 400px; /* Ajusta la altura de la sección según sea necesario */
+    background-image: url('../img/chicaflores.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Permite posicionar elementos dentro de la sección */
+    display: flex;
+    flex-direction: column; /* Permite alinear el texto verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.fondo h2 {
+    color: white; /* Color del texto */
+    font-size: 3em; /* Tamaño del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto para mejor visibilidad */
+    margin-bottom: 20px; /* Espaciado debajo del h2 */
+}
+
+.btn-descubrir {
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    background-color: #469448; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+}
+
+.btn-descubrir:hover {
+    background-color: #45a049; /* Cambia el color al pasar el cursor */
+}
