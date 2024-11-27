@@ -18,4 +18,4 @@ function prevImage() {
 }
 
 // Cambia la imagen automáticamente cada 3 segundos
-setInterval(nextImage, 3000)
+setInterval(nextImage, 2000)
