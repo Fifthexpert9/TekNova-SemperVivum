@@ -12,8 +12,6 @@
   src: url(../tipografias/APOLLO.otf);
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -172,8 +170,6 @@ main{
     }
   }
 
-
-
   #titulo{
     width: 100%;
     display: flex;
@@ -323,46 +319,46 @@ footer {
   .footer-section {
     flex: 1 1 250px;
     background-color: #53865E;
-  }
 
-  .footer-section p {
-    background-color: #53865E;
-  }
+    p {
+      background-color: #53865E;
+    }
 
-  .footer-section h3 {
-    font-size: 1.5em;
-    color: #B4E7AA;
-    background-color: #53865E;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-    font-family: fanlste;
-  }
+    h3 {
+      font-size: 1.5em;
+      color: #B4E7AA;
+      background-color: #53865E;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+      font-family: fanlste;
+    }
 
-  .footer-section ul, li {
-    list-style: none;
-    padding: 0;
-    background-color: #53865E;
-  }
+    ul, li {
+      list-style: none;
+      padding: 0;
+      background-color: #53865E;
+    }
 
-  .footer-section a {
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-    text-decoration: none; 
-    transition: transform 0.3s ease;
-  }
+    a {
+      color: white;
+      background-color: rgba(0, 0, 0, 0);
+      text-decoration: none; 
+      transition: transform 0.3s ease;
+    }
 
-  .footer-section a:hover {
-    color: #B4E7AA;
-    transform: scale(1.2);
+    a:hover {
+      color: #B4E7AA;
+      transform: scale(1.2);
+    }
   }
 
   .footer-derechos{
     margin-top: 2em;
-  }
 
-  .footer-derechos p {
-    font-size: 1em;
-    background-color: #53865E;
+    p {
+      font-size: 1em;
+      background-color: #53865E;
+    }
   }
 
   .redes-sociales {
@@ -370,10 +366,11 @@ footer {
     justify-content: center;
     gap: 1em;
     background-color: #53865E;
-  }
 
-  .redes-sociales a:hover {
-    transform: scale(1.2);
+    a:hover {
+      transform: scale(1.2);
+    }
   }
+  
 }
 
