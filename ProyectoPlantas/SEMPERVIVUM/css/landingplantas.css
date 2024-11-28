@@ -27,7 +27,6 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: linear-gradient(to right, white, #669966);
 }
 
 header{
@@ -280,5 +279,41 @@ main{
     }
   }
 
+  #misteryPB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+    margin-bottom: 8em;
+
+    #texto2{
+      text-align: right;
+      padding-right: 4em;
+    }
+
+    img{
+      width: 35%;
+      border-radius: 15px;
+    }
+  }
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #53865e;
+  padding-top: 2em;
+
+  text-align: center;
   
+  h1{
+    width: 100%;
+    font-family: fanlste;
+    font-size: 4em;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0);
+    color: #184b2c;
+  }
 }
