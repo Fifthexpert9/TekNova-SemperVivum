@@ -1,16 +1,18 @@
 @font-face {
-  font-family: recoleta;
-  src: url(../tipografias/recoleta/Recoleta-RegularDEMO.otf);
+  font-family: fanlste;
+  src: url(../tipografias/fanlste.otf);
+  /*usar con esto: https://www.dafont.com/es/fanlste.charmap?back=theme*/
 }
 @font-face {
   font-family: lasans;
   src: url(../tipografias/tt_chocolates/TT\ Chocolates\ Trial\ Light.otf);
 }
 @font-face {
-  font-family: fanlste;
-  src: url(../tipografias/fanlste.otf);
-  /*usar con esto: https://www.dafont.com/es/fanlste.charmap?back=theme*/
+  font-family: lasans2;
+  src: url(../tipografias/APOLLO.otf);
 }
+
+
 
 * {
   margin: 0;
@@ -63,6 +65,8 @@ header{
     background-color: rgba(0, 0, 0, 0);
 
     a{
+      font-family: lasans2;
+      letter-spacing: 1.5px;
       align-items: center;
       color: #184b2c;
       transition: transform 0.3s ease;
@@ -150,8 +154,9 @@ main{
     background-color: rgba(0, 0, 0, 0);
 
     a{
-      font-family: fanlste;
+      font-family: lasans2;
       font-size: 1.3em;
+      letter-spacing: 2px;
       color: white;
       background-color: #669966;
       padding: 0.8em;
@@ -342,15 +347,17 @@ footer {
   .footer-section a {
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 1em;
     text-decoration: none; 
     transition: transform 0.3s ease;
-    
   }
 
   .footer-section a:hover {
     color: #B4E7AA;
     transform: scale(1.2);
+  }
+
+  .footer-derechos{
+    margin-top: 2em;
   }
 
   .footer-derechos p {
