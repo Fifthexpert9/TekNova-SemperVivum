@@ -127,6 +127,9 @@ main{
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 9%;
+  /*background-image: url('../img/patron\ fondo.jpg');
+  background-repeat: repeat;
+  background-size: auto;*/
 
   h1{
     width: 100%;
