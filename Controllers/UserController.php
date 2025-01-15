@@ -7,8 +7,17 @@ use Models\User;
 use PDOException;
 use RuntimeException;
 
+/**
+ * Handles user-related operations.
+ * @package Controllers
+ */
 class UserController extends Controller
 {
+    /**
+     * Registers a new user and stores it in the database.
+     * @param array $data - The data of the user to be registered.
+     * @return bool - `true` if the user was successfully registered, `false` otherwise.
+     */
     public static function create($data)
     {
         $newData = $data;
@@ -31,6 +40,11 @@ class UserController extends Controller
         }
     }
 
+    /**
+     * Retrieves a user from the database by their email.
+     * @param string $email - The email of the user to be retrieved.
+     * @return ?User User|null - The user if found, `null` otherwise.
+     */
     public static function findByEmail($email)
     {
         try {
@@ -48,6 +62,11 @@ class UserController extends Controller
         }
     }
 
+    /**
+     * Retrieves a user from the database by their ID.
+     * @param int $userId - The ID of the user to be retrieved.
+     * @return ?User User|null - The user if found, `null` otherwise.
+     */
     public static function findById($userId)
     {
         try {

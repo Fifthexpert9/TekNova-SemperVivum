@@ -2,6 +2,11 @@
 
 namespace Constants;
 
+/**
+ * Handles all the routes in the application.
+ * When adding a new route, make sure to add it to the Routes class to ensure consistency throughout the application.
+ * @package Constants
+ */
 class Routes
 {
     const HOME = App::APP_URL;

@@ -13,6 +13,10 @@ use InvalidArgumentException;
 use Utils\ValidationUtils;
 use Utils\WebUtils;
 
+/**
+ * Handles the authentication of the users.
+ * @package Controllers
+ */
 class AuthController extends Controller
 {
     public static function loginView()

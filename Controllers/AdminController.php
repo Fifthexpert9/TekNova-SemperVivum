@@ -7,6 +7,11 @@ use Core\Middleware;
 use Enums\Permission;
 use Utils\WebUtils;
 
+/**
+ * Handles all admin related requests.
+ * IMPORTANT: check if the user has the required permissions before executing any action.
+ * @package Controllers
+ */
 class AdminController extends Controller
 {
     public static function indexView()
@@ -37,8 +42,15 @@ class AdminController extends Controller
         return self::view('admin/edit-product.view');
     }
 
+    /**
+     * Handles the logic for adding a product to the application.
+     * @return void
+     */
     public static function addProduct()
     {
+        Middleware::checkPermission(Permission::MANAGE_PRODUCTS);
+
+        // TODO: Remove redirect and implement the logic for adding a product.
         WebUtils::redirect(Routes::ADMIN_PRODUCTS);
     }
 }

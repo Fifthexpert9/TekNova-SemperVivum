@@ -24,7 +24,7 @@ class Database
 
     /**
      * Creates a connection to the database if it doesn't exist; otherwise, returns the existing connection.
-     * @return PDO|null
+     * @return PDO|null - The PDO object.
      */
     public static function getConnection()
     {
@@ -44,8 +44,8 @@ class Database
 
     /**
      * Queries the database with the given SQL statement and parameters.
-     * @param $sql - The SQL statement to execute.
-     * @param $params - The parameters to bind to the SQL statement.
+     * @param string $sql - The SQL statement to execute.
+     * @param array $params - The parameters to bind to the SQL statement.
      * @return false|PDOStatement - The PDOStatement object.
      */
     public static function query($sql, $params = [])
@@ -58,8 +58,8 @@ class Database
 
     /**
      * Executes an INSERT statement on the database.
-     * @param $sql - The SQL statement to execute.
-     * @param $params - The parameters to bind to the SQL statement.
+     * @param string $sql - The SQL statement to execute.
+     * @param array $params - The parameters to bind to the SQL statement.
      * @return bool - Whether the INSERT statement was successful.
      */
     public static function insert($sql, $params = [])
@@ -72,8 +72,8 @@ class Database
 
     /**
      * Fetches the first row from the result set.
-     * @param $sql - The SQL statement to execute.
-     * @param $params - The parameters to bind to the SQL statement.
+     * @param string $sql - The SQL statement to execute.
+     * @param array $params - The parameters to bind to the SQL statement.
      * @return mixed - The first row from the result set.
      */
     public static function fetch($sql, $params = [])
@@ -83,8 +83,8 @@ class Database
 
     /**
      * Same as `fetch` but returns all rows from the result set.
-     * @param $sql - The SQL statement to execute.
-     * @param $params - The parameters to bind to the SQL statement.
+     * @param string $sql - The SQL statement to execute.
+     * @param array $params - The parameters to bind to the SQL statement.
      * @return array|false - All rows from the result set.
      * @see fetch
      */

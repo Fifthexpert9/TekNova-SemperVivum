@@ -5,6 +5,10 @@ namespace Controllers;
 use Core\Database;
 use Models\Product;
 
+/**
+ * Handles product-related requests
+ * @package Controllers
+ */
 class ProductController extends Controller
 {
     /**
