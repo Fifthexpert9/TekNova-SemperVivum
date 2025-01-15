@@ -1,1 +1,0 @@
-<p>Edit product <?= $_GET['id'] ?></p>
