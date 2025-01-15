@@ -1,0 +1,15 @@
+@font-face {
+    font-family: fanlste;
+    src: url(../fonts/fanlste.otf);
+    /* usar con esto: https://www.dafont.com/es/fanlste.charmap?back=theme */
+}
+
+@font-face {
+    font-family: lasans;
+    src: url("../fonts/tt_chocolates/TT Chocolates Trial Light.otf");
+}
+
+@font-face {
+    font-family: lasans2;
+    src: url("../fonts/APOLLO.otf");
+}
