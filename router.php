@@ -6,7 +6,12 @@ use Controllers\AuthController;
 use Controllers\AdminController;
 use Controllers\UtilityController;
 
+// Removes the query string from the URL.
+// http://localhost:8000/?page=2 => http://localhost:8000/
+// Can still be accessed with $_GET['page'].
 $url = strtok($_SERVER['REQUEST_URI'], '?');
+
+// Removes trailing slashes from the URL.
 $url = rtrim($url, '/');
 
 switch ($url) {
