@@ -90,11 +90,12 @@ input, .form-control {
 
 a, .btn-link {
     font-family: lasans2;
+    letter-spacing: 2px;
     background: none;
     border: none;
     color: #184b2c;
-    text-decoration: underline;
-    font-size: 1.2em;
+    text-decoration: none;
+    font-size: 1.15em;
     cursor: pointer;
     padding: 0;
     transition: transform 0.3s ease;
