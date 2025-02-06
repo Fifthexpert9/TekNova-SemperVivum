@@ -66,4 +66,9 @@ class Auth
     {
         return UserController::findById(Session::get(self::AUTH_USER_KEY));
     }
+
+    public static function getUserId()
+    {
+        return Session::get(self::AUTH_USER_KEY);
+    }
 }

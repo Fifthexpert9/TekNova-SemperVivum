@@ -4,6 +4,7 @@ use Constants\Routes;
 use Controllers\HomeController;
 use Controllers\AuthController;
 use Controllers\AdminController;
+use Controllers\ProductController;
 use Controllers\UtilityController;
 
 // Removes the query string from the URL.
@@ -35,6 +36,9 @@ switch ($url) {
     case parse_url(Routes::LOGOUT, PHP_URL_PATH):
         AuthController::logout();
         break;
+    case parse_url(Routes::PRODUCT_VIEW, PHP_URL_PATH):
+        echo ProductController::productView();
+        break;
     case parse_url(Routes::ADMIN_DASHBOARD, PHP_URL_PATH):
         echo AdminController::indexView();
         break;
@@ -44,6 +48,9 @@ switch ($url) {
     case parse_url(Routes::ADMIN_PRODUCTS, PHP_URL_PATH):
         echo AdminController::productsView();
         break;
+    case parse_url(Routes::ADMIN_USERS, PHP_URL_PATH):
+        echo AdminController::usersView();
+        break;
     case parse_url(Routes::ADMIN_ADD_PRODUCT, PHP_URL_PATH):
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             AdminController::addProduct();
@@ -52,7 +59,14 @@ switch ($url) {
         }
         break;
     case parse_url(Routes::ADMIN_EDIT_PRODUCT, PHP_URL_PATH):
-        echo AdminController::editProductView();
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            AdminController::editProduct();
+        } else {
+            echo AdminController::editProductView();
+        }
+        break;
+    case parse_url(Routes::ADMIN_DELETE_PRODUCT, PHP_URL_PATH):
+        AdminController::deleteProduct();
         break;
     default:
         echo '404 - Página no encontrada';

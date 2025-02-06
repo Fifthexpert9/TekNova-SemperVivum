@@ -1,5 +1,10 @@
 <?php
+/**
+ * @var Product[] $products
+ */
+
 use Constants\Routes;
+use Models\Product;
 
 require_once __DIR__ . '/../../include/head.include.php';
 require_once __DIR__ . '/../../include/header.include.php';
@@ -22,26 +27,23 @@ require_once __DIR__ . '/../../include/header.include.php';
                 </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            <!-- TODO: Replace path to actual product image and avoid using inline styles -->
-                            <img src="path/to/product-image.jpg" alt="Nombre del Producto" style="max-height: 100px; object-fit: contain;" class="img-fluid">
-                        </td>
-                        <td>Nombre del Producto</td>
-                        <td>Descripción breve del producto.</td>
-                        <td>$XX.XX</td>
-                        <td><a href="<?= Routes::ADMIN_EDIT_PRODUCT ?>?id=1" class="btn btn-primary">Ver Detalles</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- TODO: Replace path to actual product image and avoid using inline styles -->
-                            <img src="path/to/product-image.jpg" alt="Otro Producto" style="max-height: 100px; object-fit: contain;" class="img-fluid">
-                        </td>
-                        <td>Otro Producto</td>
-                        <td>Otra descripción breve.</td>
-                        <td>$YY.YY</td>
-                        <td><a href="<?= Routes::ADMIN_EDIT_PRODUCT?>?id=2" class="btn btn-primary">Ver Detalles</a></td>
-                    </tr>
+                    <?php foreach ($products as $product): ?>
+                        <tr>
+                            <td>
+                                <img src="<?= $product->getImage() ?>" alt="<?= $product->getName() ?>" style="max-height: 100px; object-fit: contain;" class="img-fluid">
+                            </td>
+                            <td><?= $product->getName() ?></td>
+                            <td><?= $product->getDescription() ?></td>
+                            <td><?= $product->printPrice() ?></td>
+                            <td>
+                                <a href="<?= Routes::ADMIN_EDIT_PRODUCT ?>?id=<?= $product->getId() ?>" class="btn btn-primary">Ver Detalles</a>
+                                <form action="<?= Routes::ADMIN_DELETE_PRODUCT ?>?id=<?= $product->getId() ?>" method="POST" class="d-inline">
+                                    <input type="hidden" name="id" value="<?= $product->getId() ?>">
+                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
@@ -51,4 +53,3 @@ require_once __DIR__ . '/../../include/header.include.php';
 <?php
 require_once __DIR__ . '/../../include/footer.include.php';
 require_once __DIR__ . '/../../include/scripts.include.php';
-?>

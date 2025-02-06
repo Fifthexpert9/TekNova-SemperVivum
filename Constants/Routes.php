@@ -14,12 +14,14 @@ class Routes
     const REGISTER = App::APP_URL . '/register';
     const LOGOUT = App::APP_URL . '/logout';
     const UNAUTHORIZED = App::APP_URL . '/unauthorized';
+    const PRODUCT_VIEW = App::APP_URL . '/product';
 
     // Admin
     const ADMIN_DASHBOARD = App::APP_URL . '/admin';
     const ADMIN_PRODUCTS = self::ADMIN_DASHBOARD . '/products';
     const ADMIN_ADD_PRODUCT = self::ADMIN_PRODUCTS . '/new';
     const ADMIN_EDIT_PRODUCT = self::ADMIN_PRODUCTS . '/edit';
+    const ADMIN_DELETE_PRODUCT = self::ADMIN_PRODUCTS . '/delete';
     const ADMIN_SALES = self::ADMIN_DASHBOARD . '/sales';
     const ADMIN_USERS = self::ADMIN_DASHBOARD . '/users';
     const ADMIN_ORDERS = self::ADMIN_DASHBOARD . '/orders';

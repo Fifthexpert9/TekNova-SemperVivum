@@ -3,9 +3,12 @@
 namespace Models;
 
 use Constants\App;
+use Core\Database;
 
 class Product
 {
+    public const BASE_PATH = 'uploads/products/';
+
     private $id;
     private $name;
     private $description;
@@ -69,12 +72,17 @@ class Product
 
     public function getPrice()
     {
-        return number_format($this->priceInCents / 100, 2) . ' €';
+        return number_format($this->priceInCents / 100, 2);
     }
 
     public function getImage()
     {
-        return App::APP_URL . '/assets/imgs/' . $this->imagePath;
+        return App::APP_URL . '/' . self::BASE_PATH . $this->imagePath;
+    }
+
+    public function printPrice($suffix = '€')
+    {
+        return $this->getPrice() . $suffix;
     }
 
     public static function fromArray(array $data): self

@@ -14,6 +14,25 @@ use RuntimeException;
 class UserController extends Controller
 {
     /**
+     * Retrieves all users from the database.
+     * @return User[] - An array of user objects.
+     */
+    public static function get()
+    {
+        try {
+            $sql = 'SELECT id, first_name, last_name, email, role, created_at, updated_at FROM users';
+
+            $results = Database::fetchAll($sql);
+
+            return array_map(function ($result) {
+                return User::fromArray($result);
+            }, $results);
+        } catch (PDOException $e) {
+            throw new RuntimeException('Database error: ' . $e->getMessage());
+        }
+    }
+
+    /**
      * Registers a new user and stores it in the database.
      * @param array $data - The data of the user to be registered.
      * @return bool - `true` if the user was successfully registered, `false` otherwise.

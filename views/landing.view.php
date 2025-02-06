@@ -1,4 +1,10 @@
 <?php
+/**
+ * @var Product[] $products
+ */
+
+use Models\Product;
+
 $cssFiles = [
     'landing.css'
 ];
@@ -50,15 +56,11 @@ require_once __DIR__ . '/../include/header.include.php';
 
         <figure id="carouselExampleControls" class="carousel slide w-75 mt-6" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../assets/imgs/01.jpg" class="d-block w-100 b-1" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/imgs/02.jpg" class="d-block w-100 b-1" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/imgs/03.jpg" class="d-block w-100 b-1" alt="...">
-                </div>
+                <?php foreach ($products as $index => $product): ?>
+                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                        <img src="<?= $product->getImage() ?>" class="d-block w-100 b-1" alt="<?= $product->getName() ?>">
+                    </div>
+                <?php endforeach; ?>
             </div>
 
             <button class="carousel-control-prev b-1" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

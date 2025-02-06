@@ -11,8 +11,7 @@ class HomeController extends Controller
     public static function indexView()
     {
         // TODO: Modify this to get products from the database
-        // $products = ProductController::getProducts();
-        $products = [];
+        $products = ProductController::get(5);
         return self::view('landing.view', ['products' => $products]);
     }
 }

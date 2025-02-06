@@ -25,7 +25,22 @@ class AdminController extends Controller
     {
         Middleware::checkPermission(Permission::MANAGE_PRODUCTS);
 
-        return self::view('admin/products.view');
+        $products = ProductController::get();
+
+        return self::view('admin/products.view', [
+            'products' => $products
+        ]);
+    }
+
+    public static function usersView()
+    {
+        Middleware::checkPermission(Permission::MANAGE_USERS);
+
+        $users = UserController::get();
+
+        return self::view('admin/users.view', [
+            'users' => $users
+        ]);
     }
 
     public static function addProductView()
@@ -50,7 +65,68 @@ class AdminController extends Controller
     {
         Middleware::checkPermission(Permission::MANAGE_PRODUCTS);
 
-        // TODO: Remove redirect and implement the logic for adding a product.
+        $data = [
+            'name' => $_POST['name'],
+            'price' => $_POST['price'],
+            'description' => $_POST['description'],
+            'image' => $_POST['image']
+        ];
+
+        $success = ProductController::create($data);
+
+        // TODO: Replace with a proper error message.
+        if (!$success) {
+            echo 'Failed to add product';
+            return;
+        }
+
+        WebUtils::redirect(Routes::ADMIN_PRODUCTS);
+    }
+
+    /**
+     * Handles the logic for editing a product in the application.
+     * @return void
+     */
+    public static function editProduct()
+    {
+        Middleware::checkPermission(Permission::MANAGE_PRODUCTS);
+
+        $data = [
+            'id' => $_POST['id'],
+            'name' => $_POST['name'],
+            'price' => $_POST['price'],
+            'description' => $_POST['description'],
+            'image' => $_POST['image']
+        ];
+
+        $success = ProductController::update($data);
+
+        // TODO: Replace with a proper error message.
+        if (!$success) {
+            echo 'Failed to edit product';
+            return;
+        }
+
+        WebUtils::redirect(Routes::ADMIN_PRODUCTS);
+    }
+
+    public static function deleteProduct()
+    {
+        Middleware::checkPermission(Permission::MANAGE_PRODUCTS);
+
+        $id = $_POST['id'];
+        if (empty($id)) {
+            echo 'Invalid product id';
+            return;
+        }
+
+        $success = ProductController::delete($id);
+
+        if (!$success) {
+            echo 'Failed to delete product';
+            return;
+        }
+
         WebUtils::redirect(Routes::ADMIN_PRODUCTS);
     }
 }
