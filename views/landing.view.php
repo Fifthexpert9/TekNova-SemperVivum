@@ -24,10 +24,10 @@ require_once __DIR__ . '/../include/header.include.php';
     </section>
 
     <section class="d-flex flex-wrap justify-content-evenly align-items-center mt-4 w-75 section-img-2">
-        <img class="b-1" src="../assets/imgs/ini1.jpg" alt="Plantas suculentas">
+        <img class="b-1" src="../assets/imgs/ini1.webp" alt="Plantas suculentas">
 
         <figure class="d-flex flex-column align-items-center w-50">
-            <img class="w-100 b-1" src="../assets/imgs/phylodendron.jpg" alt="Phylodendron Silver Sword">
+            <img class="w-100 b-1" src="../assets/imgs/phylodendron.webp" alt="Phylodendron Silver Sword">
             <figcaption class="d-flex flex-column align-items-center w-100">
                 <p class="mt-4 text-center">
                     Solo durante este mes, esta auténtica belleza puede ser tuya por muy poco. Añade el Philodendron Silver Sword con un 50% dto.<br>
@@ -92,7 +92,7 @@ require_once __DIR__ . '/../include/header.include.php';
             <a href="#" class="btn btn-primary grow">¡QUIERO MI MISTERY PLANTBOX!</a>
         </div>
 
-        <img src="../assets/imgs/misteryPlantbox.jpg" alt="">
+        <img class="b-1" src="../assets/imgs/misteryPlantbox.webp" alt="">
     </article>
 </main>
 

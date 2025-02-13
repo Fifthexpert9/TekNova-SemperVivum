@@ -6,7 +6,7 @@ use Core\Auth;
 <body class="d-flex flex-column align-items-center vh-100 min-vh-100">
 <header class="d-flex flex-wrap justify-content-between position-fixed align-items-center top-0">
     <a id="logo" href="<?= Routes::HOME ?>">
-        <img src="/assets/imgs/logo.png" alt="">
+        <img src="/assets/imgs/logo.png" alt="logo">
     </a>
     <nav>
         <a href="#" class="text-uppercase grow">Plantas</a>

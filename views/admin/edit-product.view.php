@@ -1,5 +1,9 @@
 <?php
 
+$jsFiles = [
+    'add-edit-product.js'
+];
+
 use Controllers\ProductController;
 
 require_once __DIR__ . '/../../include/head.include.php';

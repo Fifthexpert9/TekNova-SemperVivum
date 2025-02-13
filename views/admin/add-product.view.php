@@ -1,4 +1,8 @@
 <?php
+$jsFiles = [
+    'add-edit-product.js'
+];
+
 require_once __DIR__ . '/../../include/head.include.php';
 require_once __DIR__ . '/../../include/header.include.php';
 ?>

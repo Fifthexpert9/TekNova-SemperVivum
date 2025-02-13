@@ -7,4 +7,4 @@ echo "Creating necessary folders..."
 if not exist %UPLOADS_FOLDER% mkdir %UPLOADS_FOLDER%
 
 echo "Starting the server..."
-php -S %SERVER_URL%
+C:\xampp\php\php.exe -S %SERVER_URL%

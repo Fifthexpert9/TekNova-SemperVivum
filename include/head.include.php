@@ -19,6 +19,7 @@ use Constants\App;
     <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css">
 
     <link rel="stylesheet" href="/assets/css/global.css">
+    
     <?php if (isset($cssFiles)): ?>
         <?php foreach ($cssFiles as $cssFile): ?>
             <link rel="stylesheet" href="/assets/css/<?= $cssFile ?>">
