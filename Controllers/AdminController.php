@@ -5,6 +5,8 @@ namespace Controllers;
 use Constants\Routes;
 use Core\Middleware;
 use Enums\Permission;
+use Models\Product;
+use Utils\FileUtils;
 use Utils\WebUtils;
 
 /**
@@ -65,16 +67,23 @@ class AdminController extends Controller
     {
         Middleware::checkPermission(Permission::MANAGE_PRODUCTS);
 
+        $imageName = null;
+
+        if (!empty($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+            $imageName = FileUtils::getFilename(
+                FileUtils::moveUploadedFile($_FILES['image'], Product::BASE_PATH)
+            );
+        }
+
         $data = [
             'name' => $_POST['name'],
             'price' => $_POST['price'],
             'description' => $_POST['description'],
-            'image' => $_POST['image']
+            'image' => $imageName
         ];
 
         $success = ProductController::create($data);
 
-        // TODO: Replace with a proper error message.
         if (!$success) {
             echo 'Failed to add product';
             return;

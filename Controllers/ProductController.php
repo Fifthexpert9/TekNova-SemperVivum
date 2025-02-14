@@ -127,14 +127,6 @@ class ProductController extends Controller
      */
     public static function create($data)
     {
-        $imageName = null;
-
-        if (!empty($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-            $imageName = FileUtils::getFilename(
-                FileUtils::moveUploadedFile($_FILES['image'], Product::BASE_PATH)
-            );
-        }
-
         $sql = 'INSERT INTO products (name, description, price_in_cents, image_path, created_at, updated_at) ' .
             'VALUES (:name, :description, :price_in_cents, :image_path, :created_at, :updated_at)';
 
@@ -142,7 +134,7 @@ class ProductController extends Controller
             'name' => $data['name'],
             'description' => $data['description'],
             'price_in_cents' => $data['price'] * 100,
-            'image_path' => $imageName,
+            'image_path' => $data['image'],
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);

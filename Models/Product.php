@@ -7,7 +7,7 @@ use Core\Database;
 
 class Product
 {
-    public const BASE_PATH = 'uploads/products/';
+    const BASE_PATH = 'uploads/products/';
 
     private $id;
     private $name;
@@ -85,7 +85,7 @@ class Product
         return $this->getPrice() . $suffix;
     }
 
-    public static function fromArray(array $data): self
+    public static function fromArray(array $data)
     {
         return new self(
             $data['id'] ?? null,
