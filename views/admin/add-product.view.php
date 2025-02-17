@@ -1,4 +1,5 @@
 <?php
+
 $jsFiles = [
     'add-edit-product.js'
 ];

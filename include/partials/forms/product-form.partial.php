@@ -31,7 +31,7 @@ $postUrl = $product ? Routes::ADMIN_EDIT_PRODUCT . '?id=' . $productId : Routes:
     </div>
     <div class="mb-3">
         <label for="price" class="form-label">Precio del producto (€)</label>
-        <input type="number" class="form-control" id="price" name="price" min="1" step="1" value="<?= htmlspecialchars($productPrice) ?>" required>
+        <input type="number" class="form-control" id="price" name="price" min="1" step="0.01" value="<?= htmlspecialchars($productPrice) ?>" required>
     </div>
     <div class="mb-3">
         <label for="image" class="form-label">Imagen del producto</label>
