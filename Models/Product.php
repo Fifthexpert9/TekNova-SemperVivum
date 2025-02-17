@@ -25,7 +25,8 @@ class Product
         $imagePath = null,
         $createdAt = null,
         $updatedAt = null
-    ) {
+    )
+    {
         $this->id = $id;
         $this->name = $name;
         $this->description = $description;

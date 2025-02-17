@@ -60,7 +60,7 @@ class Auth
 
     /**
      * Get the currently logged-in user from the database.
-     * @return User|null - The user object if the user is logged in, `null` otherwise.
+     * @return ?User - The user object if the user is logged in, `null` otherwise.
      */
     public static function getUser()
     {

@@ -18,8 +18,11 @@ use Constants\App;
     <meta name="author" content="<?= App::APP_AUTHOR ?>">
     <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css">
 
+    <link rel="stylesheet" href="/assets/css/variables.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/utils.css">
     <link rel="stylesheet" href="/assets/css/global.css">
-    
+
     <?php if (isset($cssFiles)): ?>
         <?php foreach ($cssFiles as $cssFile): ?>
             <link rel="stylesheet" href="/assets/css/<?= $cssFile ?>">
