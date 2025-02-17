@@ -13,8 +13,9 @@ class Routes
     const LOGIN = App::APP_URL . '/login';
     const REGISTER = App::APP_URL . '/register';
     const LOGOUT = App::APP_URL . '/logout';
-    const UNAUTHORIZED = App::APP_URL . '/unauthorized';
+    const ORDERS = App::APP_URL . '/orders';
     const PRODUCT_VIEW = App::APP_URL . '/product';
+    const ORDER_REPORT = App::APP_URL . '/order_report';
 
     // Admin
     const ADMIN_DASHBOARD = App::APP_URL . '/admin';
@@ -25,4 +26,7 @@ class Routes
     const ADMIN_SALES = self::ADMIN_DASHBOARD . '/sales';
     const ADMIN_USERS = self::ADMIN_DASHBOARD . '/users';
     const ADMIN_ORDERS = self::ADMIN_DASHBOARD . '/orders';
+
+    // Other
+    const UNAUTHORIZED = App::APP_URL . '/unauthorized';
 }

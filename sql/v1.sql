@@ -56,7 +56,6 @@ CREATE TABLE orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
 
     user_id INT NOT NULL,
-    total_in_cents INT NOT NULL,
 
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -69,6 +68,7 @@ CREATE TABLE order_items (
 
     order_id INT NOT NULL,
     product_id INT NOT NULL,
+    price_at_purchase_in_cents INT NOT NULL DEFAULT 0,
     quantity INT NOT NULL,
 
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

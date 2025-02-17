@@ -4,6 +4,7 @@ use Constants\Routes;
 use Controllers\HomeController;
 use Controllers\AuthController;
 use Controllers\AdminController;
+use Controllers\OrderController;
 use Controllers\ProductController;
 use Controllers\UtilityController;
 
@@ -38,6 +39,12 @@ switch ($url) {
         break;
     case parse_url(Routes::PRODUCT_VIEW, PHP_URL_PATH):
         echo ProductController::productView();
+        break;
+    case parse_url(Routes::ORDERS, PHP_URL_PATH):
+        echo OrderController::index();
+        break;
+    case parse_url(Routes::ORDER_REPORT, PHP_URL_PATH):
+        OrderController::orderReport();
         break;
     case parse_url(Routes::ADMIN_DASHBOARD, PHP_URL_PATH):
         echo AdminController::indexView();

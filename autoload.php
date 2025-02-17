@@ -1,4 +1,7 @@
 <?php
+
+require_once __DIR__ . '/lib/dompdf/autoload.inc.php';
+
 spl_autoload_register(function ($class) {
     $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
 
