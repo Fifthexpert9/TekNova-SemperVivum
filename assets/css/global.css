@@ -125,6 +125,21 @@ a:hover, .btn-link:hover {
     }
 }
 
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+    display: block;
+}
+
+.is-invalid {
+    border: 2px solid red;
+}
+
+.is-valid {
+    border: 2px solid green;
+}
+
 footer {
     background-color: var(--color-footer);
     color: white;
