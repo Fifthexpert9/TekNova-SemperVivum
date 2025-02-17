@@ -12,7 +12,7 @@ use Core\Auth;
         <a href="#" class="text-uppercase grow">Plantas</a>
         <a href="#" class="text-uppercase grow">Flores</a>
         <a href="#" class="text-uppercase grow">Accesorios</a>
-        <a href="#" class="text-uppercase grow">Mistery Plantbox</a>
+        <a href="#" class="text-uppercase grow">Mystery Plantbox</a>
 
         <?php if (Auth::isLoggedIn()) { ?>
             <?php require_once __DIR__ . '/partials/header/authenticated.partial.php'; ?>

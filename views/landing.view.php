@@ -76,7 +76,7 @@ require_once __DIR__ . '/../include/header.include.php';
 
     <article class="d-flex align-items-center m-5 gap-5 mistery-box">
         <div class="text-end">
-            <h1>Mistery Box</h1>
+            <h1>Mystery Box</h1>
             <p>
                 <i>¿Qué es? ¿QUÉ ES? Hay luces de color. ¿Qué es? Parecen de algodón.</i>
                 <br>
@@ -89,7 +89,7 @@ require_once __DIR__ . '/../include/header.include.php';
                 ¿Estás list@ para descubrir cuál te tocará a ti?
             </p>
 
-            <a href="#" class="btn btn-primary grow">¡QUIERO MI MISTERY PLANTBOX!</a>
+            <a href="#" class="btn btn-primary grow">¡QUIERO MI MYSTERY PLANTBOX!</a>
         </div>
 
         <img class="b-1" src="../assets/imgs/misteryPlantbox.webp" alt="">
