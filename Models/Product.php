@@ -111,4 +111,13 @@ class Product
 
         return 'Product(' . implode(', ', $properties) . ')';
     }
+
+    public static function find($productId) {
+        // Assuming you have a database connection setup
+        $db = Database::getConnection();
+        $stmt = $db->prepare("SELECT * FROM products WHERE id = ?");
+        $stmt->execute([$productId]);
+        $product = $stmt->fetchObject(self::class);
+        return $product;
+    }
 }

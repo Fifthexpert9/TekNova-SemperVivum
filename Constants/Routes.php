@@ -16,6 +16,9 @@ class Routes
     const ORDERS = App::APP_URL . '/orders';
     const PRODUCT_VIEW = App::APP_URL . '/product';
     const ORDER_REPORT = App::APP_URL . '/order_report';
+    const CART = App::APP_URL . '/cart';
+    const CART_ADD = App::APP_URL . '/cart/add';
+    const CART_REMOVE = App::APP_URL . '/cart/remove';
 
     // Admin
     const ADMIN_DASHBOARD = App::APP_URL . '/admin';

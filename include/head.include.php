@@ -28,7 +28,6 @@ use Constants\App;
             <link rel="stylesheet" href="/assets/css/<?= $cssFile ?>">
         <?php endforeach; ?>
     <?php endif; ?>
-
     <?php if (isset($jsFiles)): ?>
         <?php foreach ($jsFiles as $jsFile): ?>
             <script src="/assets/js/<?= $jsFile ?>" defer></script>

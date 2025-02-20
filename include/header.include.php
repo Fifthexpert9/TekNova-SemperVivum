@@ -9,7 +9,7 @@ use Core\Auth;
         <img src="/assets/imgs/logo/logo.png" alt="logo">
     </a>
     <nav>
-        <a href="#" class="text-uppercase grow">Plantas</a>
+        <a href="<?= Routes::PRODUCT_VIEW ?>" class="text-uppercase grow">Plantas</a>
         <a href="#" class="text-uppercase grow">Flores</a>
         <a href="#" class="text-uppercase grow">Accesorios</a>
         <a href="#" class="text-uppercase grow">Mistery Plantbox</a>
