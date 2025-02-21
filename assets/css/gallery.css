@@ -72,7 +72,7 @@
     margin: 0.5rem 0;
 }
 
-.add-to-cart {
+/*.add-to-cart {
     background-color: #2ecc71;
     color: white;
     border: none;
@@ -81,12 +81,12 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: auto;
-    width: 100%; /* Botón a ancho completo */
+    /*width: 100%; /* Botón a ancho completo 
 }
 
 .add-to-cart:hover {
     background-color: #27ae60;
-}
+}*/
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
