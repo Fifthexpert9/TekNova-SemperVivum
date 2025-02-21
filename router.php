@@ -35,6 +35,9 @@ switch ($url) {
             echo AuthController::registerView();
         }
         break;
+    case parse_url(Routes::GALLERY, PHP_URL_PATH):
+        echo ProductController::allProductsView();
+        break;
     case parse_url(Routes::LOGOUT, PHP_URL_PATH):
         AuthController::logout();
         break;

@@ -19,6 +19,7 @@ class Routes
     const CART = App::APP_URL . '/cart';
     const CART_ADD = App::APP_URL . '/cart/add';
     const CART_REMOVE = App::APP_URL . '/cart/remove';
+    const GALLERY = App::APP_URL . '/gallery';
 
     // Admin
     const ADMIN_DASHBOARD = App::APP_URL . '/admin';
