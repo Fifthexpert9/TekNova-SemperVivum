@@ -76,7 +76,7 @@ require_once __DIR__ . '/../include/header.include.php';
 
     <article class="row align-items-center mt-5 text-md-end text-center flex-column-reverse flex-md-row">
         <div class="col-12 col-md-6">
-            <h1>Mystery Box</h1>
+            <h1 class="mt-0">Mystery Box</h1>
             <p>
                 <i>¿Qué es? ¿QUÉ ES? Hay luces de color. ¿Qué es? Parecen de algodón.</i>
                 <br>
