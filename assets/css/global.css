@@ -67,6 +67,10 @@ a, button, li, .btn-link {
     transition: transform 0.3s ease;
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     font-size: 1em;
     margin-right: 1.5em;
@@ -169,31 +173,16 @@ footer {
     color: white;
     padding: 2em 1em;
 
-    a {
+    p {
         font-size: 1em;
+    }
+
+    a {
         color: var(--color-secondary);
-        text-decoration: none;
     }
 
-    .footer-section {
-        ul, li {
-            list-style: none;
-            padding: 0;
-        }
-    }
-
-    .footer-copyright {
-        margin-top: 2em;
-
-        p {
-            font-size: 1em;
-        }
-    }
-
-    .social-media {
-        display: flex;
-        justify-content: center;
-        gap: 1em;
-        background-color: var(--color-footer);
+    ul, li {
+        list-style: none;
+        padding: 0;
     }
 }

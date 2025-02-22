@@ -6,8 +6,8 @@ use \Constants\App;
 <footer class="w-100 text-center mt-auto">
     <div class="container">
         <div class="row">
-            <section class="footer-section col-12 col-md-4 mb-4 mb-md-0">
-                <h3 class="mb-2">Sempervivum</h3>
+            <section class="col-12 col-md-4 mb-4 mb-md-0">
+                <h3>Sempervivum</h3>
                 <ul class="list-unstyled">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Plantas</a></li>
@@ -16,18 +16,18 @@ use \Constants\App;
                     <li><a href="#">Mystery Plantbox</a></li>
                 </ul>
             </section>
-            <section class="footer-section col-12 col-md-4 mb-4 mb-md-0">
+            <section class="col-12 col-md-4 mb-4 mb-md-0">
                 <h3>Contacto</h3>
                 <p>Email: <a href="mailto:info@sempervivum.com">info@sempervivum.com</a></p>
                 <p>Teléfono: <a href="tel:+34910000000">+34 910 000 000</a></p>
             </section>
-            <section class="footer-section col-12 col-md-4">
+            <section class="col-12 col-md-4">
                 <h3>Síguenos</h3>
-                <div class="social-media">
-                    <a href="#" class="social-icon">Facebook</a>
-                    <a href="#" class="social-icon">Instagram</a>
-                    <a href="#" class="social-icon">Twitter</a>
-                </div>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="social-icon">Facebook</a></li>
+                    <li><a href="#" class="social-icon">Instagram</a></li>
+                    <li><a href="#" class="social-icon">Twitter</a></li>
+                </ul>
             </section>
         </div>
     </div>
