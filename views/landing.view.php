@@ -13,88 +13,89 @@ require_once __DIR__ . '/../include/head.include.php';
 require_once __DIR__ . '/../include/header.include.php';
 ?>
 
-<main class="d-flex flex-wrap justify-content-center">
-    <section class="d-flex flex-wrap justify-content-center text-center w-100">
-        <h1>Tu casa siempre viva,<br>para que tus días sean más verdes</h1>
-        <p class="mt-4">
-            Nuestras plantas tienen la maravillosa cualidad de no ponerse feas nunca.<br>
-            ¡Por eso siempre están vivas!<br>
-            Échales un ojo, y si algo te gusta ya sabes... ¡llévatelas al carrito!
-        </p>
+<main class="container text-center">
+    <section class="row justify-content-center">
+        <div class="col-12">
+            <h1>Tu casa siempre viva,<br>para que tus días sean más verdes</h1>
+            <p>
+                Nuestras plantas tienen la maravillosa cualidad de no ponerse feas nunca.<br>
+                ¡Por eso <b>siempre están vivas</b>!<br>
+                Échales un ojo, y si algo te gusta ya sabes... ¡llévatelas al carrito!
+            </p>
+        </div>
     </section>
 
-    <section class="d-flex flex-wrap justify-content-evenly align-items-center mt-4 w-75 section-img-2">
-        <img class="b-1" src="../assets/imgs/ini1.webp" alt="Plantas suculentas">
+    <section class="row justify-content-center align-items-center mt-4">
+        <div class="col-12 col-md-6">
+            <img class="img-fluid b-1" src="../assets/imgs/ini1.webp" alt="Plantas suculentas">
+        </div>
 
-        <figure class="d-flex flex-column align-items-center w-50">
-            <img class="w-100 b-1" src="../assets/imgs/phylodendron.webp" alt="Phylodendron Silver Sword">
-            <figcaption class="d-flex flex-column align-items-center w-100">
-                <p class="mt-4 text-center">
-                    Solo durante este mes, esta auténtica belleza puede ser tuya por muy poco. Añade el Philodendron Silver Sword con un 50% dto.<br>
+        <figure class="col-12 col-md-6 text-center">
+            <img class="img-fluid b-1" src="../assets/imgs/phylodendron.webp" alt="Phylodendron Silver Sword">
+            <figcaption>
+                <p>
+                    Solo durante este mes, esta auténtica belleza puede ser tuya por muy poco. 
+                    Añade el <i>Philodendron Silver Sword</i> con un 50% dto.<br>
                     ¡Una oportunidad única!
                     <br>Aprovecha este momento para disfrutar de verla crecer a tu lado.
                 </p>
-
                 <a href="#" class="btn btn-primary grow">COMPRAR -50%</a>
             </figcaption>
         </figure>
     </section>
 
-    <article class="d-flex flex-column align-items-center text-center">
-        <h1>¡Conoce a tus nuevas consentidas!</h1>
-        <p class="mt-4">
-            Cada una ha crecido entre cuidados, luz perfecta y mimos constantes. Aquí solo las más saludables
-            <br>
-            y elegantes tienen el honor de adornar tu hogar. ¡Descubre la nobleza de nuestras plantas
-            <br>
-            y llévate un pedacito de naturaleza selecta!
-        </p>
+    <article class="row justify-content-center">
+        <div class="col-12">
+            <h1>¡Conoce a las nuevas consentidas!</h1>
+            <p class="mt-4">
+                Cada una ha crecido entre cuidados, luz perfecta y mimos constantes. 
+                Aquí solo las más saludables y elegantes tienen el honor de adornar tu hogar. 
+                ¡Descubre la nobleza de nuestras plantas y llévate un pedacito de naturaleza selecta!
+            </p>
+            <a href="#" class="btn btn-primary mt-3 grow">NUESTRAS CONSENTIDAS</a>
+        </div>
 
-        <a href="#" class="btn btn-primary mt-3 grow">NUESTRAS CONSENTIDAS</a>
-
-        <!-- TODO: Añadir texto alternativo a cada una de las imágenes -->
-
-        <figure id="carouselExampleControls" class="carousel slide w-75 mt-6" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide w-100 mt-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <?php foreach ($products as $index => $product): ?>
                     <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                        <img src="<?= $product->getImage() ?>" class="d-block w-100 b-1" alt="<?= $product->getName() ?>">
+                        <img src="<?= $product->getImage() ?>" class="d-block w-100 img-fluid b-1" alt="<?= $product->getName() ?>">
                     </div>
                 <?php endforeach; ?>
             </div>
-
-            <button class="carousel-control-prev b-1" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next b-1" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </figure>
+        </div>
     </article>
 
-    <article class="d-flex align-items-center m-5 gap-5 mistery-box">
-        <div class="text-end">
+    <article class="row align-items-center mt-5 text-md-end text-center flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6">
             <h1>Mystery Box</h1>
             <p>
                 <i>¿Qué es? ¿QUÉ ES? Hay luces de color. ¿Qué es? Parecen de algodón.</i>
                 <br>
                 No, no hay luces de colores ni algodón. Pero te vas a llevar una sorpresa igual.
                 <br>
-                Es una caja <i>mágica</i>, que cada mes llegará a tu puerta con una nueva
-                <br>
-                mini plantita que demandará todo tu amor.
+                Es una caja <i>mágica</i>, que cada mes llegará a tu puerta con una nueva mini plantita 
+                que demandará todo tu amor.
                 <br>
                 ¿Estás list@ para descubrir cuál te tocará a ti?
             </p>
-
             <a href="#" class="btn btn-primary grow">¡QUIERO MI MYSTERY PLANTBOX!</a>
         </div>
 
-        <img class="b-1" src="../assets/imgs/misteryPlantbox.webp" alt="">
+        <div class="col-12 col-md-6 text-center">
+            <img class="img-fluid b-1" src="../assets/imgs/misteryPlantbox.webp" alt="Mystery Box">
+        </div>
     </article>
 </main>
+
 
 <?php
 require_once __DIR__ . '/../include/footer.include.php';

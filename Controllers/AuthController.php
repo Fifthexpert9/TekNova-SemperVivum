@@ -104,6 +104,6 @@ class AuthController extends Controller
     public static function logout()
     {
         Auth::logout();
-        WebUtils::redirect(Routes::LOGIN);
+        WebUtils::redirect(Routes::HOME);
     }
 }

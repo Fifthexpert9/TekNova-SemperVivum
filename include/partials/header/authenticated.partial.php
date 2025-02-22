@@ -14,9 +14,6 @@ $user = Auth::getUser();
     <?php include __DIR__ . '/role.user.partial.php'; ?>
 <?php endif; ?>
 
-<form action="<?= Routes::LOGOUT ?>" method="POST">
-    <!-- TODO: Reemplazar con un botón -->
-    <button type="submit" class="btn btn-link text-uppercase grow">Cerrar sesión</button>
-    <!-- TODO: Añadir más información del usuario -->
-</form>
-<!-- TODO: Añadir el carrito -->
+<li class="nav-item">
+    <a class="text-uppercase" href="<?= Routes::LOGOUT ?>">Cerrar sesión</a>
+</li>

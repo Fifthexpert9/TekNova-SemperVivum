@@ -17,7 +17,7 @@ $jsFiles = [
 
 
 <main>
-    <h1>Carrito de Compras</h1>
+    <h1>arito d omras</h1>
     <ul id="cart-list"></ul>
 <?php 
     /* Comprobación si el carrito está vacío

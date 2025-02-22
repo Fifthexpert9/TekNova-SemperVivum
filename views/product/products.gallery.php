@@ -14,9 +14,9 @@ $jsFiles = [
 <?php require_once __DIR__ . '/../../include/head.include.php'; ?>
 <?php require_once __DIR__ . '/../../include/header.include.php'; ?>
 
-<main class="d-flex flex-wrap justify-content-center">
-    <h1 class="text-center my-4">Nuestras Plantas</h1>
-    <div class="container">
+<main class="container text-center">
+    <h1>uestas ls</h1>
+    <div class="container mt-4">
         <div class="row">
             <?php foreach ($products as $product): ?>
                 <div class="col-md-4 mb-4">

@@ -1,5 +1,6 @@
 <?php
 use Constants\Routes;
 ?>
-
-<a href="<?= Routes::CART ?>" class="text-uppercase grow">Carrito</a>
+<li class="nav-item">
+    <a class="text-uppercase" href="<?= Routes::CART ?>">Carrito</a>
+</li>

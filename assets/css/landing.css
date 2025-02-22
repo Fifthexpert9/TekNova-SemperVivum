@@ -1,17 +1,4 @@
 main {
-    h1 {
-        width: 100%;
-        font-size: 4em;
-        font-weight: lighter;
-        background-color: rgba(0, 0, 0, 0);
-        color: #184b2c;
-    }
-
-    p {
-        font-size: 1.4em;
-        color: #184b2c;
-    }
-
     .section-img-2 {
         img {
             width: 40%;
