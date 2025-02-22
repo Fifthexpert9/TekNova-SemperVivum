@@ -38,6 +38,19 @@ class ProductController extends Controller
     }
 
     /**
+     * Displays all products in a gallery view
+     * @return void
+     */
+    public static function allProductsView()
+    {
+        $products = self::get();
+
+        return self::view('product/products.gallery', [
+            'products' => $products
+        ]);
+    }
+
+    /**
      * Gets products from the database
      * @param int $limit - The number of products to get
      * @return Product[] - An array of Product objects

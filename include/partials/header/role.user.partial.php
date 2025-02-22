@@ -2,4 +2,4 @@
 use Constants\Routes;
 ?>
 
-<a href="#" class="text-uppercase grow">Carrito</a>
+<a href="<?= Routes::CART ?>" class="text-uppercase grow">Carrito</a>

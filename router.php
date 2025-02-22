@@ -7,6 +7,7 @@ use Controllers\AdminController;
 use Controllers\OrderController;
 use Controllers\ProductController;
 use Controllers\UtilityController;
+use Controllers\CartController;
 
 // Removes the query string from the URL.
 // http://localhost:8000/?page=2 => http://localhost:8000/
@@ -33,6 +34,9 @@ switch ($url) {
         } else {
             echo AuthController::registerView();
         }
+        break;
+    case parse_url(Routes::GALLERY, PHP_URL_PATH):
+        echo ProductController::allProductsView();
         break;
     case parse_url(Routes::LOGOUT, PHP_URL_PATH):
         AuthController::logout();
@@ -75,8 +79,20 @@ switch ($url) {
     case parse_url(Routes::ADMIN_DELETE_PRODUCT, PHP_URL_PATH):
         AdminController::deleteProduct();
         break;
+    case parse_url(Routes::CART, PHP_URL_PATH):
+        echo CartController::viewCart();
+        break;
+    case parse_url(Routes::CART_ADD, PHP_URL_PATH):
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            CartController::addItem();
+        }
+        break;
+    case parse_url(Routes::CART_REMOVE, PHP_URL_PATH):
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            CartController::removeItem();
+        }
+        break;
     default:
         echo '404 - Página no encontrada';
         break;
 }
-
