@@ -16,7 +16,7 @@ require_once __DIR__ . '/../include/header.include.php';
 <main class="container text-center">
     <section class="row justify-content-center">
         <div class="col-12">
-            <h1>Tu casa siempre viva,<br>para que tus días sean más verdes</h1>
+            <h1>u cas siempre iva,<br>paa qu ts días se ás veres</h1>
             <p>
                 Nuestras plantas tienen la maravillosa cualidad de no ponerse feas nunca.<br>
                 ¡Por eso <b>siempre están vivas</b>!<br>
@@ -46,7 +46,7 @@ require_once __DIR__ . '/../include/header.include.php';
 
     <article class="row justify-content-center">
         <div class="col-12">
-            <h1>¡Conoce a las nuevas consentidas!</h1>
+            <h1>¡onoc a us nuevs consetidas!</h1>
             <p class="mt-4">
                 Cada una ha crecido entre cuidados, luz perfecta y mimos constantes. 
                 Aquí solo las más saludables y elegantes tienen el honor de adornar tu hogar. 
@@ -76,7 +76,7 @@ require_once __DIR__ . '/../include/header.include.php';
 
     <article class="row align-items-center mt-5 text-md-end text-center flex-column-reverse flex-md-row">
         <div class="col-12 col-md-6">
-            <h1 class="mt-0">Mystery Box</h1>
+            <h1 class="mt-0">stery ox</h1>
             <p>
                 <i>¿Qué es? ¿QUÉ ES? Hay luces de color. ¿Qué es? Parecen de algodón.</i>
                 <br>
