@@ -9,7 +9,7 @@ require_once __DIR__ . '/../../include/header.include.php';
 
 <main class="d-flex flex-column align-items-center">
     <section class="d-flex flex-column align-items-center w-100">
-        <h1 class="text-center mt-4">Panel de Administración</h1>
+        <h1 class="text-center">Panel de Administración</h1>
 
         <div class="container mt-5">
             <div class="row g-4">

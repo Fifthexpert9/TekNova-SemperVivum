@@ -119,6 +119,10 @@ header {
 main {
     margin-top: 5%;
     margin-bottom: 5%;
+
+    .price {
+        color: #184b2c;
+    }
 }
 
 input, .form-control {
@@ -175,6 +179,7 @@ footer {
 
     p {
         font-size: 1em;
+        margin: 0;
     }
 
     a {
@@ -184,5 +189,6 @@ footer {
     ul, li {
         list-style: none;
         padding: 0;
+        width: 100%;
     }
 }

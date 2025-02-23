@@ -16,7 +16,7 @@ require_once __DIR__ . '/../include/header.include.php';
 <main class="container text-center">
     <section class="row justify-content-center">
         <div class="col-12">
-            <h1>u cas siempre iva,<br>paa qu ts días se ás veres</h1>
+            <h1>u cas siemre iva,<br>paa qu ts días se ás veres</h1>
             <p>
                 Nuestras plantas tienen la maravillosa cualidad de no ponerse feas nunca.<br>
                 ¡Por eso <b>siempre están vivas</b>!<br>

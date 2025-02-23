@@ -10,7 +10,7 @@ require_once __DIR__ . '/../../include/header.include.php';
 
 <main class="d-flex flex-column align-items-center">
     <section class="container mt-4">
-        <h1 class="text-center mb-4">Agregar Nuevo Producto</h1>
+        <h1 class="text-center">Agregar Nuevo Producto</h1>
         <div class="row justify-content-center">
             <?php include __DIR__ . '/../../include/partials/forms/product-form.partial.php'; ?>
         </div>

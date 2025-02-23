@@ -6,7 +6,7 @@ require_once __DIR__ . '/../../include/header.include.php';
 ?>
 
 <main class="d-flex flex-wrap flex-column align-items-center">
-    <h1 class="text-center">Iniciar sesión</h1>
+    <h1 class="text-center">nicir sesió</h1>
     <p>¿No eres cliente? <a href="/register">Regístrate</a></p>
 
     <?php require_once __DIR__ . '/../../include/partials/error.partial.php'; ?>

@@ -18,8 +18,10 @@ use \Constants\App;
             </section>
             <section class="col-12 col-md-4 mb-4 mb-md-0">
                 <h3>Contacto</h3>
-                <p>Email: <a href="mailto:info@sempervivum.com">info@sempervivum.com</a></p>
-                <p>Teléfono: <a href="tel:+34910000000">+34 910 000 000</a></p>
+                <ul class="list-unstyled">
+                    <li><p>Email: <a href="mailto:info@sempervivum.com">info@sempervivum.com</a></p></li>
+                    <li><p>Teléfono: <a href="tel:+34910000000">+34 910 000 000</a></p></li>
+                </ul>
             </section>
             <section class="col-12 col-md-4">
                 <h3>Síguenos</h3>

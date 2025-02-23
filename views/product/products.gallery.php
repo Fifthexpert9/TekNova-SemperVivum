@@ -27,7 +27,7 @@ $jsFiles = [
                         <div class="card-body">
                             <h3 class="card-title"><?= $product->getName() ?></h3>
                             <p class="card-text description"><?= $product->getDescription() ?></p>
-                            <p class="card-text price">$<?= number_format($product->getPriceInCents() / 100, 2) ?></p>
+                            <p class="card-text price"><?= number_format($product->getPriceInCents() / 100, 2) ?>€</p>
                             <a href="/product?id=<?= $product->getId() ?>" class="btn btn-primary grow"
                                 data-id="<?= $product->getId() ?>"
                                 data-name="<?= $product->getName() ?>"
