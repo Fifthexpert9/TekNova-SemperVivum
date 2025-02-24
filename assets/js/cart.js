@@ -25,7 +25,7 @@ function updateCart() {
         
         // Crear contenedor para el texto y el botón
         listItem.innerHTML = `
-            <span>${item.name} - ${item.quantity} x $${item.price}</span>
+            <span>${item.name} - ${item.quantity} x ${item.price}€</span>
             <button class="delete-btn" data-index="${index}">Eliminar uno</button>
         `;
         
@@ -40,7 +40,7 @@ function updateCart() {
     totalItem.className = 'cart-total';
 
     if (combinedCart.length != 0) {
-        totalItem.textContent = `Total: $${totalPrice.toFixed(2)}`; 
+        totalItem.textContent = `Total: ${totalPrice.toFixed(2)}€`; 
         cartList.appendChild(totalItem);
     }
     

@@ -28,18 +28,21 @@ $jsFiles = [
                             <h3 class="card-title"><?= $product->getName() ?></h3>
                             <p class="card-text description"><?= $product->getDescription() ?></p>
                             <p class="card-text price"><?= number_format($product->getPriceInCents() / 100, 2) ?>€</p>
-                            <a href="/product?id=<?= $product->getId() ?>" class="btn btn-primary grow"
-                                data-id="<?= $product->getId() ?>"
-                                data-name="<?= $product->getName() ?>"
-                                data-price="<?= $product->getPriceInCents() / 100 ?>">
-                                Ver producto
-                            </a>
-                            <button class="btn btn-primary grow add-to-cart"
-                                data-id="<?= $product->getId() ?>"
-                                data-name="<?= $product->getName() ?>"
-                                data-price="<?= $product->getPriceInCents() / 100 ?>">
-                                Añadir al Carrito
-                            </button>
+
+                            <div class="d-flex justify-content-around">
+                                <a href="/product?id=<?= $product->getId() ?>" class="btn btn-primary grow"
+                                    data-id="<?= $product->getId() ?>"
+                                    data-name="<?= $product->getName() ?>"
+                                    data-price="<?= $product->getPriceInCents() / 100 ?>">
+                                    Ver producto
+                                </a>
+                                <button class="btn btn-primary grow add-to-cart"
+                                    data-id="<?= $product->getId() ?>"
+                                    data-name="<?= $product->getName() ?>"
+                                    data-price="<?= $product->getPriceInCents() / 100 ?>">
+                                    Añadir al Carrito
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
