@@ -4,7 +4,8 @@ use Constants\Routes;
 use Models\Product;
 
 $cssFiles = [
-    'landing.css'
+    'landing.css',
+    'global.css'
 ];
 $jsFiles = [
     'cart.js'

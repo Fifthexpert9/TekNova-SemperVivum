@@ -26,7 +26,7 @@ function updateCart() {
         // Crear contenedor para el texto y el botón
         listItem.innerHTML = `
             <span>${item.name} - ${item.quantity} x ${item.price}€</span>
-            <button class="delete-btn" data-index="${index}">Eliminar uno</button>
+            <button class="delete-btn btn btn-danger grow" data-index="${index}">Eliminar uno</button>
         `;
         
         // Añadir evento al botón de eliminar

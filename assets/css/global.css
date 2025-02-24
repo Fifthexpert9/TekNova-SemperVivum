@@ -16,10 +16,12 @@ h1 {
     margin-top: 1em;
 }
 
-p {
-    font-size: 1.4em;
+h2 {
+    font-family: fanlste;
+    font-size: 2em;
     color: #184b2c;
-    margin-top: 2em;
+    margin-bottom: -1em;
+    text-align: center;
 }
 
 h3 {
@@ -27,6 +29,12 @@ h3 {
     font-size: 1.5em;
     color: var(--color-light-green);
     margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.4em;
+    color: #184b2c;
+    margin-top: 2em;
 }
 
 .btn {

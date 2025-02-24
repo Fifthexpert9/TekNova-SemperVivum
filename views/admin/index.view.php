@@ -1,4 +1,5 @@
 <?php
+
 use Constants\Routes;
 
 require_once __DIR__ . '/../../include/head.include.php';
@@ -17,7 +18,9 @@ require_once __DIR__ . '/../../include/header.include.php';
                     <div class="card text-center p-4">
                         <h2>Gestión de Productos</h2>
                         <p>Agrega, edita o elimina productos de la tienda.</p>
-                        <a href="<?= Routes::ADMIN_PRODUCTS ?>" class="btn btn-primary">Gestionar Productos</a>
+                        <div>
+                            <a href="<?= Routes::ADMIN_PRODUCTS ?>" class="btn btn-primary grow">Gestionar Productos</a>
+                        </div>
                     </div>
                 </div>
 
@@ -25,7 +28,9 @@ require_once __DIR__ . '/../../include/header.include.php';
                     <div class="card text-center p-4">
                         <h2>Gestión de Ofertas</h2>
                         <p>Controla las promociones y descuentos en curso.</p>
-                        <a href="<?= Routes::ADMIN_SALES ?>" class="btn btn-primary">Gestionar Ofertas</a>
+                        <div>
+                            <a href="<?= Routes::ADMIN_SALES ?>" class="btn btn-primary grow">Gestionar Ofertas</a>
+                        </div>
                     </div>
                 </div>
 
@@ -33,7 +38,9 @@ require_once __DIR__ . '/../../include/header.include.php';
                     <div class="card text-center p-4">
                         <h2>Gestión de Usuarios</h2>
                         <p>Visualiza y administra la información de los usuarios.</p>
-                        <a href="<?= Routes::ADMIN_USERS ?>" class="btn btn-primary">Gestionar Usuarios</a>
+                        <div>
+                            <a href="<?= Routes::ADMIN_USERS ?>" class="btn btn-primary grow">Gestionar Usuarios</a>
+                        </div>
                     </div>
                 </div>
 
@@ -41,7 +48,9 @@ require_once __DIR__ . '/../../include/header.include.php';
                     <div class="card text-center p-4">
                         <h2>Gestión de Pedidos</h2>
                         <p>Consulta y administra los pedidos.</p>
-                        <a href="<?= Routes::ADMIN_ORDERS ?>" class="btn btn-primary">Gestionar Pedidos</a>
+                        <div>
+                            <a href="<?= Routes::ADMIN_ORDERS ?>" class="btn btn-primary grow">Gestionar Pedidos</a>
+                        </div>
                     </div>
                 </div>
             </div>
