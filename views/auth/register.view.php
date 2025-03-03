@@ -10,12 +10,12 @@ require_once __DIR__ . '/../../include/header.include.php';
 ?>
 
 <main class="d-flex flex-wrap flex-column align-items-center">
-    <h1 class="text-center">Registrarse</h1>
-    <p>¿Ya eres cliente? <a href="/login">Iniciar sesión</a></p>
+    <h1 class="text-center">eisras</h1>
+    <p class="mt-2">¿Ya eres cliente? <a href="/login">Iniciar sesión</a></p>
 
     <?php require_once __DIR__ . '/../../include/partials/error.partial.php'; ?>
 
-    <form action="<?= Routes::REGISTER ?>" method="POST" class="w-75 mt-4">
+    <form action="<?= Routes::REGISTER ?>" method="POST" class="w-75 mt-2">
         <div class="mb-3">
             <label for="first-name" class="form-label">Nombre</label>
             <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Tu nombre" required>
@@ -37,7 +37,7 @@ require_once __DIR__ . '/../../include/header.include.php';
         </div>
 
         <div class="text-center">
-            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <button type="submit" class="btn btn-primary grow">Registrarse</button>
         </div>
     </form>
 </main>

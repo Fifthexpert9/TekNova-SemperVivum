@@ -6,12 +6,12 @@ require_once __DIR__ . '/../../include/header.include.php';
 ?>
 
 <main class="d-flex flex-wrap flex-column align-items-center">
-    <h1 class="text-center">Iniciar sesión</h1>
-    <p>¿No eres cliente? <a href="/register">Regístrate</a></p>
+    <h1 class="text-center">nicir sesió</h1>
+    <p class="mt-2">¿No eres cliente? <a href="/register">Regístrate</a></p>
 
     <?php require_once __DIR__ . '/../../include/partials/error.partial.php'; ?>
 
-    <form action="<?= Routes::LOGIN ?>" method="POST" class="w-75 mt-4">
+    <form action="<?= Routes::LOGIN ?>" method="POST" class="w-75 mt-2">
         <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico</label>
             <input type="email" name="email" id="email" class="form-control" placeholder="test@example.com" required>
@@ -23,7 +23,7 @@ require_once __DIR__ . '/../../include/header.include.php';
         </div>
 
         <div class="text-center">
-            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            <button type="submit" class="btn btn-primary grow">Iniciar sesión</button>
         </div>
     </form>
 </main>
