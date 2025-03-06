@@ -1,12 +1,16 @@
 <?php
 use Constants\Routes;
 
+$jsFiles = [
+    'login.js'
+];
+
 require_once __DIR__ . '/../../include/head.include.php';
 require_once __DIR__ . '/../../include/header.include.php';
 ?>
 
 <main class="d-flex flex-wrap flex-column align-items-center">
-    <h1 class="text-center">nicir sesió</h1>
+    <h1 class="text-center font-title">Iniciar sesión</h1>
     <p class="mt-2">¿No eres cliente? <a href="/register">Regístrate</a></p>
 
     <?php require_once __DIR__ . '/../../include/partials/error.partial.php'; ?>

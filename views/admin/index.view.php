@@ -4,52 +4,30 @@ use Constants\Routes;
 
 require_once __DIR__ . '/../../include/head.include.php';
 require_once __DIR__ . '/../../include/header.include.php';
-
-// TODO: Comprobar si el usuario tiene permisos de administrador
 ?>
 
 <main class="d-flex flex-column align-items-center">
     <section class="d-flex flex-column align-items-center w-100">
-        <h1 class="text-center">Panel de Administración</h1>
+        <h1 class="text-center mb-4">Panel de Administración</h1>
 
-        <div class="container mt-5">
+        <div class="container mt-4">
             <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card text-center p-4">
+                <div class="col-12 col-md-6">
+                    <div class="card text-center border p-4 h-100 d-flex flex-column align-items-center justify-content-between">
                         <h2>Gestión de Productos</h2>
-                        <p>Agrega, edita o elimina productos de la tienda.</p>
-                        <div>
-                            <a href="<?= Routes::ADMIN_PRODUCTS ?>" class="btn btn-primary grow">Gestionar Productos</a>
+                        <p class="flex-grow-1 text-center">Administra y organiza los productos de la tienda.</p>
+                        <div class="w-100 d-flex justify-content-center">
+                            <a href="<?= Routes::ADMIN_PRODUCTS ?>" class="btn btn-primary btn-sm">Gestionar Productos</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card text-center p-4">
-                        <h2>Gestión de Ofertas</h2>
-                        <p>Controla las promociones y descuentos en curso.</p>
-                        <div>
-                            <a href="<?= Routes::ADMIN_SALES ?>" class="btn btn-primary grow">Gestionar Ofertas</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card text-center p-4">
+                <div class="col-12 col-md-6">
+                    <div class="card text-center border p-4 h-100 d-flex flex-column align-items-center justify-content-between">
                         <h2>Gestión de Usuarios</h2>
-                        <p>Visualiza y administra la información de los usuarios.</p>
-                        <div>
-                            <a href="<?= Routes::ADMIN_USERS ?>" class="btn btn-primary grow">Gestionar Usuarios</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card text-center p-4">
-                        <h2>Gestión de Pedidos</h2>
-                        <p>Consulta y administra los pedidos.</p>
-                        <div>
-                            <a href="<?= Routes::ADMIN_ORDERS ?>" class="btn btn-primary grow">Gestionar Pedidos</a>
+                        <p class="flex-grow-1 text-center">Gestiona y supervisa los usuarios registrados.</p>
+                        <div class="w-100 d-flex justify-content-center">
+                            <a href="<?= Routes::ADMIN_USERS ?>" class="btn btn-primary btn-sm">Gestionar Usuarios</a>
                         </div>
                     </div>
                 </div>

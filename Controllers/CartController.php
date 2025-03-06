@@ -28,6 +28,6 @@ class CartController extends Controller
     public static function viewCart()
     {
         $items = Cart::getItems();
-        return self::view('cart/cart', ['items' => $items]);
+        return self::view('cart/cart.view', ['items' => $items]);
     }
 }

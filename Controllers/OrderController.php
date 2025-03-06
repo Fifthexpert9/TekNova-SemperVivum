@@ -7,6 +7,7 @@ use Core\Auth;
 use Core\Database;
 use Core\Middleware;
 use Enums\Permission;
+use Exception;
 use Models\Order;
 use Models\OrderItem;
 use Models\Product;
@@ -47,7 +48,7 @@ class OrderController extends Controller
             WebUtils::redirect(Routes::HOME);
         }
 
-        self::view('orders/view', ['order' => $order]);
+        return self::view('orders/view', ['order' => $order]);
     }
 
     public static function orderReport()
@@ -74,6 +75,60 @@ class OrderController extends Controller
 
         $dompdf->render();
         $dompdf->stream('albaran_' . $order->getId() . '.pdf', ['Attachment' => false]);
+    }
+
+    public static function createOrder()
+    {
+        Middleware::checkPermission(Permission::BUY_PRODUCT);
+        header('Content-Type: application/json');
+
+        $userId = Auth::getUserId();
+        $requestData = json_decode(file_get_contents("php://input"), true);
+
+        if (empty($requestData['cart'])) {
+            http_response_code(400);
+            echo json_encode(["success" => false, "message" => "El carrito está vacío"]);
+            return;
+        }
+
+        $db = Database::getConnection();
+        $db->beginTransaction();
+
+        try {
+            $totalPriceInCents = array_reduce($requestData['cart'], function ($sum, $item) {
+                return $sum + ($item['price'] * 100 * $item['quantity']);
+            }, 0);
+
+            $sql = "INSERT INTO orders (user_id, total_in_cents, status, created_at, updated_at) 
+                VALUES (:userId, :total, 'pending', NOW(), NOW())";
+            $stmt = $db->prepare($sql);
+            $stmt->execute(["userId" => $userId, "total" => $totalPriceInCents]);
+            $orderId = $db->lastInsertId();
+
+            $sql = "INSERT INTO order_items (order_id, product_id, price_at_purchase_in_cents, quantity, created_at, updated_at)
+                VALUES (:orderId, :productId, :price, :quantity, NOW(), NOW())";
+            $stmt = $db->prepare($sql);
+
+            foreach ($requestData['cart'] as $item) {
+                $stmt->execute([
+                    "orderId" => $orderId,
+                    "productId" => $item["id"],
+                    "price" => $item["price"] * 100,
+                    "quantity" => $item["quantity"]
+                ]);
+            }
+
+            $db->commit();
+            echo json_encode(["success" => true, "message" => "Pedido creado con éxito"]);
+        } catch (Exception $e) {
+            $db->rollback();
+            http_response_code(500);
+            echo json_encode([
+                "success" => false,
+                "message" => "Error en la creación del pedido",
+                "error" => $e->getMessage()
+            ]);
+        }
     }
 
     /**

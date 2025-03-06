@@ -20,6 +20,7 @@ class Routes
     const CART_ADD = App::APP_URL . '/cart/add';
     const CART_REMOVE = App::APP_URL . '/cart/remove';
     const GALLERY = App::APP_URL . '/gallery';
+    const ORDER_CREATE = App::APP_URL . '/order/create';
 
     // Admin
     const ADMIN_DASHBOARD = App::APP_URL . '/admin';
@@ -27,9 +28,7 @@ class Routes
     const ADMIN_ADD_PRODUCT = self::ADMIN_PRODUCTS . '/new';
     const ADMIN_EDIT_PRODUCT = self::ADMIN_PRODUCTS . '/edit';
     const ADMIN_DELETE_PRODUCT = self::ADMIN_PRODUCTS . '/delete';
-    const ADMIN_SALES = self::ADMIN_DASHBOARD . '/sales';
     const ADMIN_USERS = self::ADMIN_DASHBOARD . '/users';
-    const ADMIN_ORDERS = self::ADMIN_DASHBOARD . '/orders';
 
     // Other
     const UNAUTHORIZED = App::APP_URL . '/unauthorized';

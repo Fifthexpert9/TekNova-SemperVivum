@@ -36,11 +36,13 @@ require_once __DIR__ . '/../../include/header.include.php';
                             <td><?= $product->getDescription() ?></td>
                             <td><?= $product->printPrice() ?></td>
                             <td>
-                                <a href="<?= Routes::ADMIN_EDIT_PRODUCT ?>?id=<?= $product->getId() ?>" class="btn btn-primary">Ver detalles</a>
-                                <form action="<?= Routes::ADMIN_DELETE_PRODUCT ?>?id=<?= $product->getId() ?>" method="POST" class="d-inline">
-                                    <input type="hidden" name="id" value="<?= $product->getId() ?>">
-                                    <button type="submit" class="btn btn-danger">Eliminar</button>
-                                </form>
+                                <div class="d-flex gap-2">
+                                    <a href="<?= Routes::ADMIN_EDIT_PRODUCT ?>?id=<?= $product->getId() ?>" class="btn btn-sm btn-primary">Ver detalles</a>
+                                    <form action="<?= Routes::ADMIN_DELETE_PRODUCT ?>?id=<?= $product->getId() ?>" method="POST" class="d-inline">
+                                        <input type="hidden" name="id" value="<?= $product->getId() ?>">
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach; ?>

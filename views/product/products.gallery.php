@@ -1,6 +1,8 @@
 <?php
-
-use Constants\Routes;
+/**
+ * @var Product[] $products
+ */
+use Models\Product;
 
 $cssFiles = [
     'landing.css',
@@ -15,7 +17,7 @@ $jsFiles = [
 <?php require_once __DIR__ . '/../../include/header.include.php'; ?>
 
 <main class="container text-center">
-    <h1>uestas ls</h1>
+    <h1>Nuestras Plantas</h1>
     <div class="row">
         <?php foreach ($products as $product): ?>
         <div class="col-md-4 mb-4">

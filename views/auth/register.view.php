@@ -10,7 +10,7 @@ require_once __DIR__ . '/../../include/header.include.php';
 ?>
 
 <main class="d-flex flex-wrap flex-column align-items-center">
-    <h1 class="text-center">eisras</h1>
+    <h1 class="text-center font-title">Registrarse</h1>
     <p class="mt-2">¿Ya eres cliente? <a href="/login">Iniciar sesión</a></p>
 
     <?php require_once __DIR__ . '/../../include/partials/error.partial.php'; ?>

@@ -16,7 +16,7 @@ require_once __DIR__ . '/../include/header.include.php';
 <main class="container text-center">
     <section class="row">
         <div class="col-12">
-            <h1>u cas siemre iva,<br>paa qu ts días se ás veres</h1>
+                <h1 class="font-title">Tu casa siempre viva,<br>para que tus días se vean más verdes</h1>
             <p>
                 Nuestras plantas tienen la maravillosa cualidad de no ponerse feas nunca.<br>
                 ¡Por eso <b>siempre están vivas</b>!<br>
@@ -44,13 +44,13 @@ require_once __DIR__ . '/../include/header.include.php';
 
     <article class="row mt-3 d-flex justify-content-center">
         <div class="col-12 mb-4">
-            <h1>¡onoc a us nuevs consetidas!</h1>
+            <h1 class="font-title">¡Conoce a tus nuevas consentidas!</h1>
             <p class="mt-4">
                 Cada una ha crecido entre cuidados, luz perfecta y mimos constantes.
                 Aquí solo las más saludables y elegantes tienen el honor de adornar tu hogar.
                 ¡Descubre la nobleza de nuestras plantas y llévate un pedacito de naturaleza selecta!
             </p>
-            <a href="#" class="btn btn-primary mt-3 mb-3 grow">NUESTRAS CONSENTIDAS</a>
+            <a href="#" class="btn btn-primary mt-3 mb-3 grow text-uppercase">Nuestras consentidas</a>
         </div>
 
         <div id="carouselExampleControls" class="carousel slide w-75" data-bs-ride="carousel">
@@ -77,7 +77,7 @@ require_once __DIR__ . '/../include/header.include.php';
 
     <article class="row align-items-center text-md-end text-center flex-column-reverse flex-md-row mt-4">
         <div class="col-12 col-md-6 mt-5">
-            <h1 class="mt-0">stery ox</h1>
+            <h1 class="mt-0 font-title">Mystery Box</h1>
             <p>
                 <i>¿Qué es? ¿QUÉ ES? Hay luces de color. ¿Qué es? Parecen de algodón.</i>
                 <br>

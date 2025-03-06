@@ -47,6 +47,13 @@ switch ($url) {
     case parse_url(Routes::ORDERS, PHP_URL_PATH):
         echo OrderController::index();
         break;
+    case parse_url(Routes::ORDER_CREATE, PHP_URL_PATH):
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            OrderController::createOrder();
+        } else {
+            echo OrderController::orderView();
+        }
+        break;
     case parse_url(Routes::ORDER_REPORT, PHP_URL_PATH):
         OrderController::orderReport();
         break;
