@@ -9,4 +9,4 @@ for %%i in (%UPLOADS_FOLDER%) do (
 )
 
 echo "Starting the server..."
-php.exe -S %SERVER_URL%
+C:\xampp\php\php.exe -S %SERVER_URL%
